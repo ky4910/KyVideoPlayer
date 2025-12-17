@@ -1,0 +1,60 @@
+{
+    "classes": [
+        {
+            "className": "AudioDecoder",
+            "lineNumber": 19,
+            "object": true,
+            "qualifiedClassName": "AudioDecoder",
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pkt",
+                            "type": "AVPacket*"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 31,
+                    "name": "pushPacket",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "codecpar",
+                            "type": "AVCodecParameters*"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 32,
+                    "name": "onAudioCodecParReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 33,
+                    "name": "processQueuedPackets",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "lineNumber": 34,
+                    "name": "stopDecode",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "audiodecoder.h",
+    "outputRevision": 69
+}

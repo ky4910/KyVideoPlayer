@@ -1,0 +1,3 @@
+D:\SW\QtCreator18\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\appKyVideoPlayer.dir/objects.a
+D:\SW\QtCreator18\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\appKyVideoPlayer.dir/objects.a @CMakeFiles\appKyVideoPlayer.dir\objects1.rsp
+D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe -DQT_QML_DEBUG -g -mwindows -Wl,--whole-archive CMakeFiles\appKyVideoPlayer.dir/objects.a -Wl,--no-whole-archive -o appKyVideoPlayer.exe -Wl,--out-implib,libappKyVideoPlayer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\appKyVideoPlayer.dir\linkLibs.rsp

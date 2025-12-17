@@ -1,0 +1,205 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-64e99fbbe428ffe762ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "KyVideoPlayer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-3c7ff35a47b0f8d0e098.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-aa69e86d2fee1ff5e72d.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-6fe30f5966184b762a37.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-f5fd1b25c31b109b5b84.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-798e4eb6c4a047258614.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer-Debug-5fa1aa0c9d8bc9460389.json",
+					"name" : "appKyVideoPlayer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_autogen-Debug-09259bc4cb81300fcbc8.json",
+					"name" : "appKyVideoPlayer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_autogen_timestamp_deps-Debug-5f87fed2668992e659b7.json",
+					"name" : "appKyVideoPlayer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_copy_qml-Debug-5637df8dad606b9152be.json",
+					"name" : "appKyVideoPlayer_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_copy_res-Debug-beeca76a39c4b796345f.json",
+					"name" : "appKyVideoPlayer_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_qmlimportscan-Debug-1be00438e47d63bfda35.json",
+					"name" : "appKyVideoPlayer_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_qmllint-Debug-2ab8b75e6470b34de610.json",
+					"name" : "appKyVideoPlayer_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_qmllint_json-Debug-3d30fb295493473e734f.json",
+					"name" : "appKyVideoPlayer_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_qmllint_module-Debug-0e4393e9b0b9271cb777.json",
+					"name" : "appKyVideoPlayer_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appKyVideoPlayer_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appKyVideoPlayer_qmltyperegistration-Debug-97688723392474477417.json",
+					"name" : "appKyVideoPlayer_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-87bcdc3a442f972a16f7.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appKyVideoPlayer_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appKyVideoPlayer_aotstats_target-Debug-8a4ca4e8df671145bb7d.json",
+					"name" : "module_appKyVideoPlayer_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug",
+		"source" : "D:/Code/QtRelated/KyVideoPlayer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

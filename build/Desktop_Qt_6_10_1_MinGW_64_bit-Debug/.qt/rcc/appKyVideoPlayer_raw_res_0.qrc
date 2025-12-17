@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/KyVideoPlayer/">
+    <file alias="shaders.qrc">D:/Code/QtRelated/KyVideoPlayer/shaders.qrc</file>
+  </qresource>
+</RCC>
+

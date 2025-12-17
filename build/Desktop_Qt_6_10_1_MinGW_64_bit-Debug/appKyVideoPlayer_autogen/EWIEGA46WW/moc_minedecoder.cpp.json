@@ -1,0 +1,33 @@
+{
+    "classes": [
+        {
+            "className": "MineDecoder",
+            "lineNumber": 7,
+            "object": true,
+            "qualifiedClassName": "MineDecoder",
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 15,
+                    "name": "startDecoding",
+                    "returnType": "int"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "minedecoder.h",
+    "outputRevision": 69
+}

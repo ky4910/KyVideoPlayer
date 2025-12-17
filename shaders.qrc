@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>yuv.vert</file>
+        <file>yuv.frag</file>
+    </qresource>
+</RCC>

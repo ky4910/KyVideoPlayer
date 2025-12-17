@@ -1,0 +1,91 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(KyVideoPlayer VERSION 0.1 LANGUAGES CXX)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+
+
+set(FFMPEG_ROOT "D:/kProject/RelatedLib/ffmpeg60")
+set(SDL2_ROOT "D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32")
+
+include_directories(
+    ${FFMPEG_ROOT}/include
+    ${SDL2_ROOT}/include
+)
+
+link_directories(
+    ${FFMPEG_ROOT}/lib
+    ${SDL2_ROOT}/lib
+)
+
+add_definitions(-D__INTRIN_H_INCLUDED)
+
+qt_policy(SET QTP0001 NEW)
+
+qt_add_executable(appKyVideoPlayer
+    main.cpp
+)
+
+qt_add_qml_module(appKyVideoPlayer
+    URI KyVideoPlayer
+    VERSION 1.0
+    QML_FILES
+        Main.qml
+        SOURCES
+        SOURCES minedecoder.h minedecoder.cpp
+        SOURCES playercontroller.h playercontroller.cpp
+        SOURCES demuxworker.h demuxworker.cpp
+        SOURCES audiodecoder.h audiodecoder.cpp
+        SOURCES videodecoder.h videodecoder.cpp
+        SOURCES utils.h utils.cpp
+        SOURCES videooutputfbo.h videooutputfbo.cpp
+        SOURCES videooutputrenderer.h videooutputrenderer.cpp
+        RESOURCES
+)
+qt6_add_resources(RESOURCES shaders.qrc)
+
+# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
+# If you are developing for iOS or macOS you should consider setting an
+# explicit, fixed bundle identifier manually though.
+set_target_properties(appKyVideoPlayer PROPERTIES
+#    MACOSX_BUNDLE_GUI_IDENTIFIER com.example.appKyVideoPlayer
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
+)
+
+# target_link_libraries(appKyVideoPlayer
+#     PRIVATE Qt6::Quick
+# )
+
+target_link_libraries(appKyVideoPlayer
+    PRIVATE
+        SDL2
+        Qt6::Core
+        Qt6::Quick
+        avcodec
+        avformat
+        avutil
+        swscale
+        swresample
+    )
+target_link_libraries(appKyVideoPlayer PRIVATE Qt6::Core)
+target_link_libraries(appKyVideoPlayer PRIVATE Qt6::Core)
+target_link_libraries(appKyVideoPlayer PRIVATE Qt6::Core)
+target_link_libraries(appKyVideoPlayer PRIVATE Qt6::Core)
+
+include(GNUInstallDirs)
+install(TARGETS appKyVideoPlayer
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
