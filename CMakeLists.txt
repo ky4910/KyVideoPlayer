@@ -32,6 +32,22 @@ qt_policy(SET QTP0001 NEW)
 
 qt_add_executable(appKyVideoPlayer
     main.cpp
+    Controller/playercontroller.cpp
+    Decoder/audiodecoder.cpp
+    Decoder/videodecoder.cpp
+    Demux/demuxworker.cpp
+    Render/videooutputfbo.cpp
+    Render/videooutputrenderer.cpp
+    PlaybackContext/playcontext.cpp
+)
+
+include_directories(
+    Controller
+    Decoder
+    Demux
+    Render
+    PlaybackContext
+    Tools
 )
 
 qt_add_qml_module(appKyVideoPlayer
@@ -39,15 +55,6 @@ qt_add_qml_module(appKyVideoPlayer
     VERSION 1.0
     QML_FILES
         Main.qml
-        SOURCES
-        SOURCES minedecoder.h minedecoder.cpp
-        SOURCES playercontroller.h playercontroller.cpp
-        SOURCES demuxworker.h demuxworker.cpp
-        SOURCES audiodecoder.h audiodecoder.cpp
-        SOURCES videodecoder.h videodecoder.cpp
-        SOURCES utils.h utils.cpp
-        SOURCES videooutputfbo.h videooutputfbo.cpp
-        SOURCES videooutputrenderer.h videooutputrenderer.cpp
         RESOURCES
 )
 qt6_add_resources(RESOURCES shaders.qrc)

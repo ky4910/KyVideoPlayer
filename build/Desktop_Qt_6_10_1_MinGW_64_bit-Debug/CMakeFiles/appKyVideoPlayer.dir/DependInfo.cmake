@@ -9,21 +9,20 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "appKyVideoPlayer_autogen/timestamp" "custom" "appKyVideoPlayer_autogen/deps"
+  "D:/Code/QtRelated/KyVideoPlayer/Controller/playercontroller.cpp" "CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj.d"
+  "D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.cpp" "CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj.d"
+  "D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.cpp" "CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj.d"
+  "D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.cpp" "CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj.d"
+  "D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.cpp" "CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj.d"
+  "D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.cpp" "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj.d"
+  "D:/Code/QtRelated/KyVideoPlayer/Render/videooutputrenderer.cpp" "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKyVideoPlayer_autogen/mocs_compilation.cpp" "CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appkyvideoplayer_qmltyperegistrations.cpp" "CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/audiodecoder.cpp" "CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/demuxworker.cpp" "CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj.d"
   "D:/Code/QtRelated/KyVideoPlayer/main.cpp" "CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/minedecoder.cpp" "CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/playercontroller.cpp" "CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/utils.cpp" "CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/videodecoder.cpp" "CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/videooutputfbo.cpp" "CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj.d"
-  "D:/Code/QtRelated/KyVideoPlayer/videooutputrenderer.cpp" "CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj" "gcc" "CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj.d"
   )
 
 # Pairs of files generated by the same build rule.

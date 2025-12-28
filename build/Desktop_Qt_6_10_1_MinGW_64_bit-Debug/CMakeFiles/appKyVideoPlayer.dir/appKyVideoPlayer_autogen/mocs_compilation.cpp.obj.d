@@ -1,52 +1,17 @@
 CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj: \
  D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\mocs_compilation.cpp \
- D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\EWIEGA46WW/moc_audiodecoder.cpp \
- D:/Code/QtRelated/KyVideoPlayer/audiodecoder.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+ D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\TTE4PTQQBL/moc_playercontroller.cpp \
+ D:/Code/QtRelated/KyVideoPlayer/Controller/playercontroller.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QObject \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobjectdefs.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qnamespace.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qglobal.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/stddef.h \
@@ -57,24 +22,12 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_secapi.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QObject \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobjectdefs.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qnamespace.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qglobal.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdint.h \
@@ -119,10 +72,29 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qflags.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcompare_impl.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qatomic.h \
@@ -143,8 +115,13 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/variant \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
@@ -154,6 +131,7 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qminmax.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qnumeric.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/math.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/gamma.tcc \
@@ -179,13 +157,30 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qstdlibdetection.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcomparehelpers.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmetamacros.h \
@@ -327,9 +322,90 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QThread \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qthread.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
+ D:/Code/QtRelated/KyVideoPlayer/Tools/utils.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdebug.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtextstream.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontiguouscache.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmap.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata_impl.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qset.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qhash.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qalloc.h \
+ D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/dict.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/rational.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/version.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/macros.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/avconfig.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version_major.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_par.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/avutil.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/common.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/inttypes.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/mem.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/avutil.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/version.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/error.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/rational.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/mathematics.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/intfloat.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/log.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/pixfmt.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/channel_layout.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/pixfmt.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_id.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/samplefmt.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version_major.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavformat/avformat.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/hwcontext.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/frame.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/channel_layout.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/dict.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/samplefmt.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/log.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_id.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/defs.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavformat/avio.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QMutex \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmutex.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtsan_impl.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_main.h \
@@ -487,47 +563,12 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_locale.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_misc.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/dict.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/rational.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/version.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/macros.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/avconfig.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version_major.h \
+ D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/avcodec.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/samplefmt.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/avutil.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/common.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/x86_64-w64-mingw32/include/inttypes.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/mem.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/avutil.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/version.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/error.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/rational.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/mathematics.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/intfloat.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/log.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/pixfmt.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/frame.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/channel_layout.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/dict.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/samplefmt.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/log.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/pixfmt.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/hwcontext.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/frame.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_id.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version_major.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_desc.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_id.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_par.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/channel_layout.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/defs.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version.h \
@@ -535,57 +576,8 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version_major.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version_major.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmochelpers.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmocconstants.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20algorithm.h \
- D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\EWIEGA46WW/moc_demuxworker.cpp \
- D:/Code/QtRelated/KyVideoPlayer/demuxworker.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_par.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavformat/avformat.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/defs.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavformat/avio.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
- D:/Code/QtRelated/KyVideoPlayer/utils.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdebug.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtextstream.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontiguouscache.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmap.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata_impl.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qset.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qhash.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qalloc.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QThread \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qthread.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
- D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\EWIEGA46WW/moc_minedecoder.cpp \
- D:/Code/QtRelated/KyVideoPlayer/minedecoder.h \
- D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\EWIEGA46WW/moc_playercontroller.cpp \
- D:/Code/QtRelated/KyVideoPlayer/playercontroller.h \
- D:/Code/QtRelated/KyVideoPlayer/demuxworker.h \
- D:/Code/QtRelated/KyVideoPlayer/audiodecoder.h \
- D:/Code/QtRelated/KyVideoPlayer/videodecoder.h \
- D:/Code/QtRelated/KyVideoPlayer/videooutputfbo.h \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.h \
+ D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQuick/QQuickFramebufferObject \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQuick/qquickframebufferobject.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQuick/QQuickItem \
@@ -679,7 +671,14 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qrgb.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qrgba64.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qaccessible_base.h \
- D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\EWIEGA46WW/moc_videodecoder.cpp \
- D:/Code/QtRelated/KyVideoPlayer/videodecoder.h \
- D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\EWIEGA46WW/moc_videooutputfbo.cpp \
- D:/Code/QtRelated/KyVideoPlayer/videooutputfbo.h
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmochelpers.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmocconstants.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20algorithm.h \
+ D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\NMJ6GIEFL4/moc_audiodecoder.cpp \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h \
+ D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\NMJ6GIEFL4/moc_videodecoder.cpp \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.h \
+ D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\XVDINS4CTB/moc_demuxworker.cpp \
+ D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.h \
+ D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appKyVideoPlayer_autogen\Q6Y7IZYM6X/moc_videooutputfbo.cpp \
+ D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.h

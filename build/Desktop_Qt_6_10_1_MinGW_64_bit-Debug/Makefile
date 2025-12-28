@@ -381,6 +381,174 @@ appKyVideoPlayer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer_autogen.dir\build.make CMakeFiles/appKyVideoPlayer_autogen.dir/build
 .PHONY : appKyVideoPlayer_autogen/fast
 
+Controller/playercontroller.obj: Controller/playercontroller.cpp.obj
+.PHONY : Controller/playercontroller.obj
+
+# target to build an object file
+Controller/playercontroller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj
+.PHONY : Controller/playercontroller.cpp.obj
+
+Controller/playercontroller.i: Controller/playercontroller.cpp.i
+.PHONY : Controller/playercontroller.i
+
+# target to preprocess a source file
+Controller/playercontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.i
+.PHONY : Controller/playercontroller.cpp.i
+
+Controller/playercontroller.s: Controller/playercontroller.cpp.s
+.PHONY : Controller/playercontroller.s
+
+# target to generate assembly for a file
+Controller/playercontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.s
+.PHONY : Controller/playercontroller.cpp.s
+
+Decoder/audiodecoder.obj: Decoder/audiodecoder.cpp.obj
+.PHONY : Decoder/audiodecoder.obj
+
+# target to build an object file
+Decoder/audiodecoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj
+.PHONY : Decoder/audiodecoder.cpp.obj
+
+Decoder/audiodecoder.i: Decoder/audiodecoder.cpp.i
+.PHONY : Decoder/audiodecoder.i
+
+# target to preprocess a source file
+Decoder/audiodecoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.i
+.PHONY : Decoder/audiodecoder.cpp.i
+
+Decoder/audiodecoder.s: Decoder/audiodecoder.cpp.s
+.PHONY : Decoder/audiodecoder.s
+
+# target to generate assembly for a file
+Decoder/audiodecoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.s
+.PHONY : Decoder/audiodecoder.cpp.s
+
+Decoder/videodecoder.obj: Decoder/videodecoder.cpp.obj
+.PHONY : Decoder/videodecoder.obj
+
+# target to build an object file
+Decoder/videodecoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj
+.PHONY : Decoder/videodecoder.cpp.obj
+
+Decoder/videodecoder.i: Decoder/videodecoder.cpp.i
+.PHONY : Decoder/videodecoder.i
+
+# target to preprocess a source file
+Decoder/videodecoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.i
+.PHONY : Decoder/videodecoder.cpp.i
+
+Decoder/videodecoder.s: Decoder/videodecoder.cpp.s
+.PHONY : Decoder/videodecoder.s
+
+# target to generate assembly for a file
+Decoder/videodecoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.s
+.PHONY : Decoder/videodecoder.cpp.s
+
+Demux/demuxworker.obj: Demux/demuxworker.cpp.obj
+.PHONY : Demux/demuxworker.obj
+
+# target to build an object file
+Demux/demuxworker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj
+.PHONY : Demux/demuxworker.cpp.obj
+
+Demux/demuxworker.i: Demux/demuxworker.cpp.i
+.PHONY : Demux/demuxworker.i
+
+# target to preprocess a source file
+Demux/demuxworker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.i
+.PHONY : Demux/demuxworker.cpp.i
+
+Demux/demuxworker.s: Demux/demuxworker.cpp.s
+.PHONY : Demux/demuxworker.s
+
+# target to generate assembly for a file
+Demux/demuxworker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.s
+.PHONY : Demux/demuxworker.cpp.s
+
+PlaybackContext/playcontext.obj: PlaybackContext/playcontext.cpp.obj
+.PHONY : PlaybackContext/playcontext.obj
+
+# target to build an object file
+PlaybackContext/playcontext.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj
+.PHONY : PlaybackContext/playcontext.cpp.obj
+
+PlaybackContext/playcontext.i: PlaybackContext/playcontext.cpp.i
+.PHONY : PlaybackContext/playcontext.i
+
+# target to preprocess a source file
+PlaybackContext/playcontext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.i
+.PHONY : PlaybackContext/playcontext.cpp.i
+
+PlaybackContext/playcontext.s: PlaybackContext/playcontext.cpp.s
+.PHONY : PlaybackContext/playcontext.s
+
+# target to generate assembly for a file
+PlaybackContext/playcontext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.s
+.PHONY : PlaybackContext/playcontext.cpp.s
+
+Render/videooutputfbo.obj: Render/videooutputfbo.cpp.obj
+.PHONY : Render/videooutputfbo.obj
+
+# target to build an object file
+Render/videooutputfbo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj
+.PHONY : Render/videooutputfbo.cpp.obj
+
+Render/videooutputfbo.i: Render/videooutputfbo.cpp.i
+.PHONY : Render/videooutputfbo.i
+
+# target to preprocess a source file
+Render/videooutputfbo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.i
+.PHONY : Render/videooutputfbo.cpp.i
+
+Render/videooutputfbo.s: Render/videooutputfbo.cpp.s
+.PHONY : Render/videooutputfbo.s
+
+# target to generate assembly for a file
+Render/videooutputfbo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.s
+.PHONY : Render/videooutputfbo.cpp.s
+
+Render/videooutputrenderer.obj: Render/videooutputrenderer.cpp.obj
+.PHONY : Render/videooutputrenderer.obj
+
+# target to build an object file
+Render/videooutputrenderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj
+.PHONY : Render/videooutputrenderer.cpp.obj
+
+Render/videooutputrenderer.i: Render/videooutputrenderer.cpp.i
+.PHONY : Render/videooutputrenderer.i
+
+# target to preprocess a source file
+Render/videooutputrenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.i
+.PHONY : Render/videooutputrenderer.cpp.i
+
+Render/videooutputrenderer.s: Render/videooutputrenderer.cpp.s
+.PHONY : Render/videooutputrenderer.s
+
+# target to generate assembly for a file
+Render/videooutputrenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.s
+.PHONY : Render/videooutputrenderer.cpp.s
+
 appKyVideoPlayer_autogen/mocs_compilation.obj: appKyVideoPlayer_autogen/mocs_compilation.cpp.obj
 .PHONY : appKyVideoPlayer_autogen/mocs_compilation.obj
 
@@ -428,30 +596,6 @@ appkyvideoplayer_qmltyperegistrations.s: appkyvideoplayer_qmltyperegistrations.c
 appkyvideoplayer_qmltyperegistrations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.s
 .PHONY : appkyvideoplayer_qmltyperegistrations.cpp.s
-
-audiodecoder.obj: audiodecoder.cpp.obj
-.PHONY : audiodecoder.obj
-
-# target to build an object file
-audiodecoder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj
-.PHONY : audiodecoder.cpp.obj
-
-audiodecoder.i: audiodecoder.cpp.i
-.PHONY : audiodecoder.i
-
-# target to preprocess a source file
-audiodecoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.i
-.PHONY : audiodecoder.cpp.i
-
-audiodecoder.s: audiodecoder.cpp.s
-.PHONY : audiodecoder.s
-
-# target to generate assembly for a file
-audiodecoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.s
-.PHONY : audiodecoder.cpp.s
 
 build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.obj: build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj
 .PHONY : build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.obj
@@ -549,30 +693,6 @@ build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcac
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.s
 .PHONY : build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.s
 
-demuxworker.obj: demuxworker.cpp.obj
-.PHONY : demuxworker.obj
-
-# target to build an object file
-demuxworker.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj
-.PHONY : demuxworker.cpp.obj
-
-demuxworker.i: demuxworker.cpp.i
-.PHONY : demuxworker.i
-
-# target to preprocess a source file
-demuxworker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.i
-.PHONY : demuxworker.cpp.i
-
-demuxworker.s: demuxworker.cpp.s
-.PHONY : demuxworker.s
-
-# target to generate assembly for a file
-demuxworker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.s
-.PHONY : demuxworker.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -596,150 +716,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-minedecoder.obj: minedecoder.cpp.obj
-.PHONY : minedecoder.obj
-
-# target to build an object file
-minedecoder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj
-.PHONY : minedecoder.cpp.obj
-
-minedecoder.i: minedecoder.cpp.i
-.PHONY : minedecoder.i
-
-# target to preprocess a source file
-minedecoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.i
-.PHONY : minedecoder.cpp.i
-
-minedecoder.s: minedecoder.cpp.s
-.PHONY : minedecoder.s
-
-# target to generate assembly for a file
-minedecoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.s
-.PHONY : minedecoder.cpp.s
-
-playercontroller.obj: playercontroller.cpp.obj
-.PHONY : playercontroller.obj
-
-# target to build an object file
-playercontroller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj
-.PHONY : playercontroller.cpp.obj
-
-playercontroller.i: playercontroller.cpp.i
-.PHONY : playercontroller.i
-
-# target to preprocess a source file
-playercontroller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.i
-.PHONY : playercontroller.cpp.i
-
-playercontroller.s: playercontroller.cpp.s
-.PHONY : playercontroller.s
-
-# target to generate assembly for a file
-playercontroller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.s
-.PHONY : playercontroller.cpp.s
-
-utils.obj: utils.cpp.obj
-.PHONY : utils.obj
-
-# target to build an object file
-utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj
-.PHONY : utils.cpp.obj
-
-utils.i: utils.cpp.i
-.PHONY : utils.i
-
-# target to preprocess a source file
-utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/utils.cpp.i
-.PHONY : utils.cpp.i
-
-utils.s: utils.cpp.s
-.PHONY : utils.s
-
-# target to generate assembly for a file
-utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/utils.cpp.s
-.PHONY : utils.cpp.s
-
-videodecoder.obj: videodecoder.cpp.obj
-.PHONY : videodecoder.obj
-
-# target to build an object file
-videodecoder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj
-.PHONY : videodecoder.cpp.obj
-
-videodecoder.i: videodecoder.cpp.i
-.PHONY : videodecoder.i
-
-# target to preprocess a source file
-videodecoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.i
-.PHONY : videodecoder.cpp.i
-
-videodecoder.s: videodecoder.cpp.s
-.PHONY : videodecoder.s
-
-# target to generate assembly for a file
-videodecoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.s
-.PHONY : videodecoder.cpp.s
-
-videooutputfbo.obj: videooutputfbo.cpp.obj
-.PHONY : videooutputfbo.obj
-
-# target to build an object file
-videooutputfbo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj
-.PHONY : videooutputfbo.cpp.obj
-
-videooutputfbo.i: videooutputfbo.cpp.i
-.PHONY : videooutputfbo.i
-
-# target to preprocess a source file
-videooutputfbo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.i
-.PHONY : videooutputfbo.cpp.i
-
-videooutputfbo.s: videooutputfbo.cpp.s
-.PHONY : videooutputfbo.s
-
-# target to generate assembly for a file
-videooutputfbo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.s
-.PHONY : videooutputfbo.cpp.s
-
-videooutputrenderer.obj: videooutputrenderer.cpp.obj
-.PHONY : videooutputrenderer.obj
-
-# target to build an object file
-videooutputrenderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj
-.PHONY : videooutputrenderer.cpp.obj
-
-videooutputrenderer.i: videooutputrenderer.cpp.i
-.PHONY : videooutputrenderer.i
-
-# target to preprocess a source file
-videooutputrenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.i
-.PHONY : videooutputrenderer.cpp.i
-
-videooutputrenderer.s: videooutputrenderer.cpp.s
-.PHONY : videooutputrenderer.s
-
-# target to generate assembly for a file
-videooutputrenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.s
-.PHONY : videooutputrenderer.cpp.s
 
 # Help Target
 help:
@@ -770,15 +746,33 @@ help:
 	@echo ... generate_qmlls_build_ini_file
 	@echo ... module_appKyVideoPlayer_aotstats_target
 	@echo ... appKyVideoPlayer
+	@echo ... Controller/playercontroller.obj
+	@echo ... Controller/playercontroller.i
+	@echo ... Controller/playercontroller.s
+	@echo ... Decoder/audiodecoder.obj
+	@echo ... Decoder/audiodecoder.i
+	@echo ... Decoder/audiodecoder.s
+	@echo ... Decoder/videodecoder.obj
+	@echo ... Decoder/videodecoder.i
+	@echo ... Decoder/videodecoder.s
+	@echo ... Demux/demuxworker.obj
+	@echo ... Demux/demuxworker.i
+	@echo ... Demux/demuxworker.s
+	@echo ... PlaybackContext/playcontext.obj
+	@echo ... PlaybackContext/playcontext.i
+	@echo ... PlaybackContext/playcontext.s
+	@echo ... Render/videooutputfbo.obj
+	@echo ... Render/videooutputfbo.i
+	@echo ... Render/videooutputfbo.s
+	@echo ... Render/videooutputrenderer.obj
+	@echo ... Render/videooutputrenderer.i
+	@echo ... Render/videooutputrenderer.s
 	@echo ... appKyVideoPlayer_autogen/mocs_compilation.obj
 	@echo ... appKyVideoPlayer_autogen/mocs_compilation.i
 	@echo ... appKyVideoPlayer_autogen/mocs_compilation.s
 	@echo ... appkyvideoplayer_qmltyperegistrations.obj
 	@echo ... appkyvideoplayer_qmltyperegistrations.i
 	@echo ... appkyvideoplayer_qmltyperegistrations.s
-	@echo ... audiodecoder.obj
-	@echo ... audiodecoder.i
-	@echo ... audiodecoder.s
 	@echo ... build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.obj
 	@echo ... build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.i
 	@echo ... build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.s
@@ -791,30 +785,9 @@ help:
 	@echo ... build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.obj
 	@echo ... build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.i
 	@echo ... build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.s
-	@echo ... demuxworker.obj
-	@echo ... demuxworker.i
-	@echo ... demuxworker.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... minedecoder.obj
-	@echo ... minedecoder.i
-	@echo ... minedecoder.s
-	@echo ... playercontroller.obj
-	@echo ... playercontroller.i
-	@echo ... playercontroller.s
-	@echo ... utils.obj
-	@echo ... utils.i
-	@echo ... utils.s
-	@echo ... videodecoder.obj
-	@echo ... videodecoder.i
-	@echo ... videodecoder.s
-	@echo ... videooutputfbo.obj
-	@echo ... videooutputfbo.i
-	@echo ... videooutputfbo.s
-	@echo ... videooutputrenderer.obj
-	@echo ... videooutputrenderer.i
-	@echo ... videooutputrenderer.s
 .PHONY : help
 
 

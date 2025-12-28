@@ -1,0 +1,89 @@
+{
+    "classes": [
+        {
+            "className": "DemuxWorker",
+            "lineNumber": 11,
+            "object": true,
+            "qualifiedClassName": "DemuxWorker",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pkt",
+                            "type": "AVPacket*"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 26,
+                    "name": "audioPacketReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pkt",
+                            "type": "AVPacket*"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 27,
+                    "name": "videoPacketReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "codecpar",
+                            "type": "AVCodecParameters*"
+                        },
+                        {
+                            "name": "timeBase",
+                            "type": "AVRational"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 29,
+                    "name": "audioCodecParReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "codecpar",
+                            "type": "AVCodecParameters*"
+                        },
+                        {
+                            "name": "timeBase",
+                            "type": "AVRational"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 30,
+                    "name": "videoCodecParReady",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 4,
+                    "lineNumber": 33,
+                    "name": "stopDemux",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "demuxworker.h",
+    "outputRevision": 69
+}

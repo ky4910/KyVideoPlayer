@@ -3,7 +3,7 @@
         "classes": [
             {
                 "className": "AudioDecoder",
-                "lineNumber": 19,
+                "lineNumber": 21,
                 "object": true,
                 "qualifiedClassName": "AudioDecoder",
                 "slots": [
@@ -16,7 +16,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 31,
+                        "lineNumber": 33,
                         "name": "pushPacket",
                         "returnType": "void"
                     },
@@ -26,25 +26,49 @@
                             {
                                 "name": "codecpar",
                                 "type": "AVCodecParameters*"
+                            },
+                            {
+                                "name": "timeBase",
+                                "type": "AVRational"
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 32,
+                        "lineNumber": 34,
                         "name": "onAudioCodecParReady",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 2,
-                        "lineNumber": 33,
+                        "lineNumber": 35,
                         "name": "processQueuedPackets",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 34,
+                        "lineNumber": 36,
                         "name": "stopDecode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 38,
+                        "name": "getContext",
+                        "returnType": "PlayContext*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "context",
+                                "type": "PlayContext*"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 39,
+                        "name": "setContext",
                         "returnType": "void"
                     }
                 ],
@@ -62,215 +86,8 @@
     {
         "classes": [
             {
-                "className": "DemuxWorker",
-                "lineNumber": 11,
-                "object": true,
-                "qualifiedClassName": "DemuxWorker",
-                "signals": [
-                    {
-                        "access": "public",
-                        "index": 0,
-                        "lineNumber": 26,
-                        "name": "finished",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "pkt",
-                                "type": "AVPacket*"
-                            }
-                        ],
-                        "index": 1,
-                        "lineNumber": 28,
-                        "name": "audioPacketReady",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "pkt",
-                                "type": "AVPacket*"
-                            }
-                        ],
-                        "index": 2,
-                        "lineNumber": 29,
-                        "name": "videoPacketReady",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "codecpar",
-                                "type": "AVCodecParameters*"
-                            }
-                        ],
-                        "index": 3,
-                        "lineNumber": 31,
-                        "name": "audioCodecParReady",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "codecpar",
-                                "type": "AVCodecParameters*"
-                            }
-                        ],
-                        "index": 4,
-                        "lineNumber": 32,
-                        "name": "videoCodecParReady",
-                        "returnType": "void"
-                    }
-                ],
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QObject"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "demuxworker.h",
-        "outputRevision": 69
-    },
-    {
-        "classes": [
-            {
-                "className": "MineDecoder",
-                "lineNumber": 7,
-                "object": true,
-                "qualifiedClassName": "MineDecoder",
-                "slots": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "filePath",
-                                "type": "QString"
-                            }
-                        ],
-                        "index": 0,
-                        "lineNumber": 15,
-                        "name": "startDecoding",
-                        "returnType": "int"
-                    }
-                ],
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QObject"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "minedecoder.h",
-        "outputRevision": 69
-    },
-    {
-        "classes": [
-            {
-                "className": "PlayerController",
-                "lineNumber": 13,
-                "methods": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "url",
-                                "type": "QString"
-                            }
-                        ],
-                        "index": 2,
-                        "lineNumber": 21,
-                        "name": "play",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 3,
-                        "lineNumber": 22,
-                        "name": "pause",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "sec",
-                                "type": "double"
-                            }
-                        ],
-                        "index": 4,
-                        "lineNumber": 23,
-                        "name": "seek",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 5,
-                        "lineNumber": 24,
-                        "name": "stop",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "videoItem",
-                                "type": "QObject*"
-                            }
-                        ],
-                        "index": 6,
-                        "lineNumber": 25,
-                        "name": "setVideoOutput",
-                        "returnType": "void"
-                    }
-                ],
-                "object": true,
-                "qualifiedClassName": "PlayerController",
-                "signals": [
-                    {
-                        "access": "public",
-                        "index": 0,
-                        "lineNumber": 28,
-                        "name": "stopSignal",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "message",
-                                "type": "QString"
-                            }
-                        ],
-                        "index": 1,
-                        "lineNumber": 29,
-                        "name": "errorOccurred",
-                        "returnType": "void"
-                    }
-                ],
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QObject"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "playercontroller.h",
-        "outputRevision": 69
-    },
-    {
-        "classes": [
-            {
                 "className": "VideoDecoder",
-                "lineNumber": 19,
+                "lineNumber": 21,
                 "object": true,
                 "qualifiedClassName": "VideoDecoder",
                 "signals": [
@@ -283,7 +100,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 28,
+                        "lineNumber": 31,
                         "name": "frameDecoded",
                         "returnType": "void"
                     }
@@ -298,7 +115,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 31,
+                        "lineNumber": 34,
                         "name": "pushPacket",
                         "returnType": "void"
                     },
@@ -308,25 +125,49 @@
                             {
                                 "name": "codecpar",
                                 "type": "AVCodecParameters*"
+                            },
+                            {
+                                "name": "timeBase",
+                                "type": "AVRational"
                             }
                         ],
                         "index": 2,
-                        "lineNumber": 32,
+                        "lineNumber": 35,
                         "name": "onVideoCodecParReady",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 33,
+                        "lineNumber": 36,
                         "name": "processQueuedPackets",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 4,
-                        "lineNumber": 34,
+                        "lineNumber": 37,
                         "name": "stopDecode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 39,
+                        "name": "getContext",
+                        "returnType": "PlayContext*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "context",
+                                "type": "PlayContext*"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 40,
+                        "name": "setContext",
                         "returnType": "void"
                     }
                 ],
@@ -381,6 +222,190 @@
             }
         ],
         "inputFile": "videooutputfbo.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "PlayerController",
+                "lineNumber": 14,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "url",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 22,
+                        "name": "play",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 23,
+                        "name": "pause",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "sec",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 24,
+                        "name": "seek",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 25,
+                        "name": "stop",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "videoItem",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 26,
+                        "name": "setVideoOutput",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "PlayerController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 29,
+                        "name": "stopSignal",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 30,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "playercontroller.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "DemuxWorker",
+                "lineNumber": 11,
+                "object": true,
+                "qualifiedClassName": "DemuxWorker",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pkt",
+                                "type": "AVPacket*"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 26,
+                        "name": "audioPacketReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pkt",
+                                "type": "AVPacket*"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 27,
+                        "name": "videoPacketReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "codecpar",
+                                "type": "AVCodecParameters*"
+                            },
+                            {
+                                "name": "timeBase",
+                                "type": "AVRational"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 29,
+                        "name": "audioCodecParReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "codecpar",
+                                "type": "AVCodecParameters*"
+                            },
+                            {
+                                "name": "timeBase",
+                                "type": "AVRational"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 30,
+                        "name": "videoCodecParReady",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 33,
+                        "name": "stopDemux",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "demuxworker.h",
         "outputRevision": 69
     }
 ]

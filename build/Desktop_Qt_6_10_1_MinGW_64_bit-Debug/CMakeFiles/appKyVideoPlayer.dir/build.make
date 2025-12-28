@@ -168,11 +168,116 @@ CMakeFiles/appKyVideoPlayer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/main.cpp.s"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\main.cpp -o CMakeFiles\appKyVideoPlayer.dir\main.cpp.s
 
+CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/Controller/playercontroller.cpp
+CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\Controller\playercontroller.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\Controller\playercontroller.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\Controller\playercontroller.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\Controller\playercontroller.cpp > CMakeFiles\appKyVideoPlayer.dir\Controller\playercontroller.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\Controller\playercontroller.cpp -o CMakeFiles\appKyVideoPlayer.dir\Controller\playercontroller.cpp.s
+
+CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.cpp
+CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\Decoder\audiodecoder.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\Decoder\audiodecoder.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\Decoder\audiodecoder.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\Decoder\audiodecoder.cpp > CMakeFiles\appKyVideoPlayer.dir\Decoder\audiodecoder.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\Decoder\audiodecoder.cpp -o CMakeFiles\appKyVideoPlayer.dir\Decoder\audiodecoder.cpp.s
+
+CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.cpp
+CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\Decoder\videodecoder.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\Decoder\videodecoder.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\Decoder\videodecoder.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\Decoder\videodecoder.cpp > CMakeFiles\appKyVideoPlayer.dir\Decoder\videodecoder.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\Decoder\videodecoder.cpp -o CMakeFiles\appKyVideoPlayer.dir\Decoder\videodecoder.cpp.s
+
+CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.cpp
+CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\Demux\demuxworker.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\Demux\demuxworker.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\Demux\demuxworker.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\Demux\demuxworker.cpp > CMakeFiles\appKyVideoPlayer.dir\Demux\demuxworker.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\Demux\demuxworker.cpp -o CMakeFiles\appKyVideoPlayer.dir\Demux\demuxworker.cpp.s
+
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.cpp
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\Render\videooutputfbo.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\Render\videooutputfbo.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\Render\videooutputfbo.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\Render\videooutputfbo.cpp > CMakeFiles\appKyVideoPlayer.dir\Render\videooutputfbo.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\Render\videooutputfbo.cpp -o CMakeFiles\appKyVideoPlayer.dir\Render\videooutputfbo.cpp.s
+
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/Render/videooutputrenderer.cpp
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\Render\videooutputrenderer.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\Render\videooutputrenderer.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\Render\videooutputrenderer.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\Render\videooutputrenderer.cpp > CMakeFiles\appKyVideoPlayer.dir\Render\videooutputrenderer.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\Render\videooutputrenderer.cpp -o CMakeFiles\appKyVideoPlayer.dir\Render\videooutputrenderer.cpp.s
+
+CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
+CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
+CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.cpp
+CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\PlaybackContext\playcontext.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\PlaybackContext\playcontext.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\PlaybackContext\playcontext.cpp
+
+CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.i"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\PlaybackContext\playcontext.cpp > CMakeFiles\appKyVideoPlayer.dir\PlaybackContext\playcontext.cpp.i
+
+CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.s"
+	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\PlaybackContext\playcontext.cpp -o CMakeFiles\appKyVideoPlayer.dir\PlaybackContext\playcontext.cpp.s
+
 CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
 CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
 CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj: appkyvideoplayer_qmltyperegistrations.cpp
 CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-mbig-obj -MD -MT CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\appkyvideoplayer_qmltyperegistrations.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\appkyvideoplayer_qmltyperegistrations.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\appkyvideoplayer_qmltyperegistrations.cpp
 
 CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.i: cmake_force
@@ -187,7 +292,7 @@ CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/r
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj: .qt/rcc/qrc_qmake_KyVideoPlayer.cpp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_KyVideoPlayer.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_KyVideoPlayer.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_KyVideoPlayer.cpp
 
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.i: cmake_force
@@ -198,131 +303,11 @@ CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/r
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.s"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_KyVideoPlayer.cpp -o CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_KyVideoPlayer.cpp.s
 
-CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/minedecoder.cpp
-CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\minedecoder.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\minedecoder.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\minedecoder.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\minedecoder.cpp > CMakeFiles\appKyVideoPlayer.dir\minedecoder.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\minedecoder.cpp -o CMakeFiles\appKyVideoPlayer.dir\minedecoder.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/playercontroller.cpp
-CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\playercontroller.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\playercontroller.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\playercontroller.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\playercontroller.cpp > CMakeFiles\appKyVideoPlayer.dir\playercontroller.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\playercontroller.cpp -o CMakeFiles\appKyVideoPlayer.dir\playercontroller.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/demuxworker.cpp
-CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\demuxworker.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\demuxworker.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\demuxworker.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\demuxworker.cpp > CMakeFiles\appKyVideoPlayer.dir\demuxworker.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\demuxworker.cpp -o CMakeFiles\appKyVideoPlayer.dir\demuxworker.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/audiodecoder.cpp
-CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\audiodecoder.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\audiodecoder.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\audiodecoder.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\audiodecoder.cpp > CMakeFiles\appKyVideoPlayer.dir\audiodecoder.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\audiodecoder.cpp -o CMakeFiles\appKyVideoPlayer.dir\audiodecoder.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/videodecoder.cpp
-CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\videodecoder.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\videodecoder.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\videodecoder.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\videodecoder.cpp > CMakeFiles\appKyVideoPlayer.dir\videodecoder.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\videodecoder.cpp -o CMakeFiles\appKyVideoPlayer.dir\videodecoder.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/utils.cpp
-CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\utils.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\utils.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\utils.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/utils.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\utils.cpp > CMakeFiles\appKyVideoPlayer.dir\utils.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/utils.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\utils.cpp -o CMakeFiles\appKyVideoPlayer.dir\utils.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/videooutputfbo.cpp
-CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\videooutputfbo.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\videooutputfbo.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\videooutputfbo.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\videooutputfbo.cpp > CMakeFiles\appKyVideoPlayer.dir\videooutputfbo.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\videooutputfbo.cpp -o CMakeFiles\appKyVideoPlayer.dir\videooutputfbo.cpp.s
-
-CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
-CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
-CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj: D:/Code/QtRelated/KyVideoPlayer/videooutputrenderer.cpp
-CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\videooutputrenderer.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\videooutputrenderer.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\videooutputrenderer.cpp
-
-CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.i"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\QtRelated\KyVideoPlayer\videooutputrenderer.cpp > CMakeFiles\appKyVideoPlayer.dir\videooutputrenderer.cpp.i
-
-CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.s"
-	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\QtRelated\KyVideoPlayer\videooutputrenderer.cpp -o CMakeFiles\appKyVideoPlayer.dir\videooutputrenderer.cpp.s
-
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/flags.make
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj: .rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appKyVideoPlayer_qmlcache_loader.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appKyVideoPlayer_qmlcache_loader.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appKyVideoPlayer_qmlcache_loader.cpp
 
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.i: cmake_force
@@ -337,7 +322,7 @@ CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj: .rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appKyVideoPlayer_Main_qml.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appKyVideoPlayer_Main_qml.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appKyVideoPlayer_Main_qml.cpp
 
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.i: cmake_force
@@ -352,7 +337,7 @@ CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/r
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/includes_CXX.rsp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj: .qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj: CMakeFiles/appKyVideoPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj"
 	D:\SW\QtCreator18\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj -MF CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appKyVideoPlayer_raw_qml_0.cpp.obj.d -o CMakeFiles\appKyVideoPlayer.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appKyVideoPlayer_raw_qml_0.cpp.obj -c D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appKyVideoPlayer_raw_qml_0.cpp
 
 CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.i: cmake_force
@@ -367,16 +352,15 @@ CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/r
 appKyVideoPlayer_OBJECTS = \
 "CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj" \
+"CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj" \
 "CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj" \
 "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj" \
-"CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj" \
 "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj" \
 "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj" \
 "CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj"
@@ -386,16 +370,15 @@ appKyVideoPlayer_EXTERNAL_OBJECTS =
 
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/Controller/playercontroller.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj
+appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/PlaybackContext/playcontext.cpp.obj
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/minedecoder.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/playercontroller.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/demuxworker.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/audiodecoder.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/videodecoder.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/utils.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/videooutputfbo.cpp.obj
-appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/videooutputrenderer.cpp.obj
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.obj
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.obj
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.obj
@@ -410,7 +393,7 @@ appKyVideoPlayer.exe: D:/SW/QtCreator18/6.10.1/mingw_64/lib/libQt6EntryPoint.a
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/linkLibs.rsp
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/objects1.rsp
 appKyVideoPlayer.exe: CMakeFiles/appKyVideoPlayer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable appKyVideoPlayer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Code\QtRelated\KyVideoPlayer\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable appKyVideoPlayer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\appKyVideoPlayer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

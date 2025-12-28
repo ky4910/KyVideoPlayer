@@ -460,7 +460,7 @@ CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj: \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qscreen_platform.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qkeysequence.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQml/qqmlinfo.h \
- D:\Code\QtRelated\KyVideoPlayer\utils.h \
+ D:/Code/QtRelated/KyVideoPlayer/Tools/utils.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdebug.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QThread \
@@ -472,9 +472,9 @@ CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj: \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
- D:\Code\QtRelated\KyVideoPlayer\playercontroller.h \
+ D:/Code/QtRelated/KyVideoPlayer/Controller/playercontroller.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QObject \
- D:\Code\QtRelated\KyVideoPlayer\demuxworker.h \
+ D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
@@ -519,7 +519,7 @@ CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj: \
  D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
- D:\Code\QtRelated\KyVideoPlayer\audiodecoder.h \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
@@ -684,6 +684,7 @@ CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj: \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_locale.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_misc.h \
+ D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/avcodec.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/frame.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec.h \
@@ -696,8 +697,8 @@ CMakeFiles/appKyVideoPlayer.dir/main.cpp.obj: \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version_major.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version_major.h \
- D:\Code\QtRelated\KyVideoPlayer\videodecoder.h \
- D:\Code\QtRelated\KyVideoPlayer\videooutputfbo.h \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.h \
+ D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQuick/QQuickFramebufferObject \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQuick/qquickframebufferobject.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQuick/QQuickItem \

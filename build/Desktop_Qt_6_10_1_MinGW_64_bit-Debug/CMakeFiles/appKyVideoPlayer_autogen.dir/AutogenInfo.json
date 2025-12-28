@@ -1169,51 +1169,45 @@
 	"HEADERS" : 
 	[
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/audiodecoder.h",
+			"D:/Code/QtRelated/KyVideoPlayer/Controller/playercontroller.h",
 			"Mu",
-			"EWIEGA46WW/moc_audiodecoder.cpp",
+			"TTE4PTQQBL/moc_playercontroller.cpp",
 			null
 		],
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/demuxworker.h",
+			"D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h",
 			"Mu",
-			"EWIEGA46WW/moc_demuxworker.cpp",
+			"NMJ6GIEFL4/moc_audiodecoder.cpp",
 			null
 		],
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/minedecoder.h",
+			"D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.h",
 			"Mu",
-			"EWIEGA46WW/moc_minedecoder.cpp",
+			"NMJ6GIEFL4/moc_videodecoder.cpp",
 			null
 		],
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/playercontroller.h",
+			"D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.h",
 			"Mu",
-			"EWIEGA46WW/moc_playercontroller.cpp",
+			"XVDINS4CTB/moc_demuxworker.cpp",
 			null
 		],
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/utils.h",
+			"D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h",
 			"Mu",
-			"EWIEGA46WW/moc_utils.cpp",
+			"KKQIIPKJ75/moc_playcontext.cpp",
 			null
 		],
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/videodecoder.h",
+			"D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.h",
 			"Mu",
-			"EWIEGA46WW/moc_videodecoder.cpp",
+			"Q6Y7IZYM6X/moc_videooutputfbo.cpp",
 			null
 		],
 		[
-			"D:/Code/QtRelated/KyVideoPlayer/videooutputfbo.h",
+			"D:/Code/QtRelated/KyVideoPlayer/Render/videooutputrenderer.h",
 			"Mu",
-			"EWIEGA46WW/moc_videooutputfbo.cpp",
-			null
-		],
-		[
-			"D:/Code/QtRelated/KyVideoPlayer/videooutputrenderer.h",
-			"Mu",
-			"EWIEGA46WW/moc_videooutputrenderer.cpp",
+			"Q6Y7IZYM6X/moc_videooutputrenderer.cpp",
 			null
 		]
 	],
@@ -1250,6 +1244,12 @@
 	[
 		"D:/kProject/RelatedLib/ffmpeg60/include",
 		"D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include",
+		"D:/Code/QtRelated/KyVideoPlayer/Controller",
+		"D:/Code/QtRelated/KyVideoPlayer/Decoder",
+		"D:/Code/QtRelated/KyVideoPlayer/Demux",
+		"D:/Code/QtRelated/KyVideoPlayer/Render",
+		"D:/Code/QtRelated/KyVideoPlayer/PlaybackContext",
+		"D:/Code/QtRelated/KyVideoPlayer/Tools",
 		"D:/Code/QtRelated/KyVideoPlayer",
 		"D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQml",
 		"D:/SW/QtCreator18/6.10.1/mingw_64/include",
@@ -1307,15 +1307,38 @@
 	"SETTINGS_FILE" : "D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/appKyVideoPlayer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "D:/Code/QtRelated/KyVideoPlayer/audiodecoder.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/demuxworker.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/main.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/minedecoder.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/playercontroller.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/utils.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/videodecoder.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/videooutputfbo.cpp", "Mu", null ],
-		[ "D:/Code/QtRelated/KyVideoPlayer/videooutputrenderer.cpp", "Mu", null ]
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/Controller/playercontroller.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/Decoder/videodecoder.cpp",
+			"Mu",
+			null
+		],
+		[ "D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.cpp", "Mu", null ],
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/Render/videooutputrenderer.cpp",
+			"Mu",
+			null
+		],
+		[ "D:/Code/QtRelated/KyVideoPlayer/main.cpp", "Mu", null ]
 	],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0

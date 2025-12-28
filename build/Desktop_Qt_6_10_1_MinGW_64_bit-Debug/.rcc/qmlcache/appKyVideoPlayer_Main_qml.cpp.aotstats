@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 381,
+                            "durationMicroseconds": 799,
                             "functionName": "color",
                             "line": 13,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 120,
+                            "durationMicroseconds": 273,
                             "functionName": "nameFilters",
                             "line": 19,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 9,
-                            "durationMicroseconds": 171,
+                            "durationMicroseconds": 358,
                             "functionName": "onAccepted",
                             "line": 22,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 9,
-                            "durationMicroseconds": 63,
+                            "durationMicroseconds": 152,
                             "functionName": "onRejected",
                             "line": 28,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 86,
+                            "durationMicroseconds": 200,
                             "functionName": "width",
                             "line": 56,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 61,
+                            "durationMicroseconds": 149,
                             "functionName": "horizontalCenter",
                             "line": 58,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 60,
+                            "durationMicroseconds": 121,
                             "functionName": "bottom",
                             "line": 60,
                             "message": ""
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 49,
+                            "durationMicroseconds": 110,
                             "functionName": "horizontalCenter",
                             "line": 70,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 47,
+                            "durationMicroseconds": 146,
                             "functionName": "bottom",
                             "line": 71,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 2,
                             "column": 13,
-                            "durationMicroseconds": 358,
+                            "durationMicroseconds": 872,
                             "functionName": "onClicked",
                             "line": 101,
                             "message": "Cannot access value for name playerController"
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 126,
+                            "durationMicroseconds": 313,
                             "functionName": "color",
                             "line": 83,
                             "message": ""
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 44,
+                            "durationMicroseconds": 124,
                             "functionName": "text",
                             "line": 87,
                             "message": ""
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 42,
+                            "durationMicroseconds": 134,
                             "functionName": "horizontalAlignment",
                             "line": 93,
                             "message": ""
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 32,
+                            "durationMicroseconds": 100,
                             "functionName": "verticalAlignment",
                             "line": 94,
                             "message": ""
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 28,
+                            "durationMicroseconds": 94,
                             "functionName": "centerIn",
                             "line": 89,
                             "message": ""
@@ -176,7 +176,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 25,
+                            "durationMicroseconds": 76,
                             "functionName": "fill",
                             "line": 90,
                             "message": ""
@@ -184,7 +184,7 @@
                         {
                             "codegenResult": 0,
                             "column": 33,
-                            "durationMicroseconds": 69,
+                            "durationMicroseconds": 205,
                             "functionName": "pixelSize",
                             "line": 96,
                             "message": ""
@@ -192,7 +192,7 @@
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 239,
+                            "durationMicroseconds": 602,
                             "functionName": "onClicked",
                             "line": 134,
                             "message": "Cannot access value for name playerController"
@@ -200,7 +200,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 110,
+                            "durationMicroseconds": 285,
                             "functionName": "color",
                             "line": 116,
                             "message": ""
@@ -208,7 +208,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 44,
+                            "durationMicroseconds": 113,
                             "functionName": "text",
                             "line": 120,
                             "message": ""
@@ -216,7 +216,7 @@
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 36,
+                            "durationMicroseconds": 107,
                             "functionName": "horizontalAlignment",
                             "line": 126,
                             "message": ""
@@ -224,7 +224,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 31,
+                            "durationMicroseconds": 86,
                             "functionName": "verticalAlignment",
                             "line": 127,
                             "message": ""
@@ -232,7 +232,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 32,
+                            "durationMicroseconds": 92,
                             "functionName": "centerIn",
                             "line": 122,
                             "message": ""
@@ -240,7 +240,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 25,
+                            "durationMicroseconds": 71,
                             "functionName": "fill",
                             "line": 123,
                             "message": ""
@@ -248,7 +248,7 @@
                         {
                             "codegenResult": 0,
                             "column": 33,
-                            "durationMicroseconds": 58,
+                            "durationMicroseconds": 142,
                             "functionName": "pixelSize",
                             "line": 129,
                             "message": ""
@@ -256,7 +256,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 158,
+                            "durationMicroseconds": 387,
                             "functionName": "onCompleted",
                             "line": 139,
                             "message": "Cannot access value for name playerController"
