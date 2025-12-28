@@ -398,7 +398,8 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavformat/version_major.h \
- D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h \
+ D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
+ D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
@@ -407,6 +408,24 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QMutex \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmutex.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtsan_impl.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QWaitCondition \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qwaitcondition.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDeadlineTimer \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/avcodec.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavutil/frame.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_desc.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_par.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/defs.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
+ D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version.h \
+ D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QTimer \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtimer.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbasictimer.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qeventloop.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_main.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_stdinc.h \
@@ -563,15 +582,6 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_locale.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_misc.h \
- D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/avcodec.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavutil/frame.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_desc.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/codec_par.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/defs.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
- D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/version.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/swresample.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version_major.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version.h \
@@ -629,9 +639,6 @@ CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.ob
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/experimental/source_location \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qevent.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcoreevent.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbasictimer.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qeventloop.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qiodevice.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qeventpoint.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/qvector2d.h \

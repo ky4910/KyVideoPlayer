@@ -2,33 +2,21 @@
     "classes": [
         {
             "className": "DemuxWorker",
-            "lineNumber": 11,
+            "lineNumber": 12,
             "object": true,
             "qualifiedClassName": "DemuxWorker",
             "signals": [
                 {
                     "access": "public",
-                    "arguments": [
-                        {
-                            "name": "pkt",
-                            "type": "AVPacket*"
-                        }
-                    ],
                     "index": 0,
-                    "lineNumber": 26,
+                    "lineNumber": 30,
                     "name": "audioPacketReady",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "arguments": [
-                        {
-                            "name": "pkt",
-                            "type": "AVPacket*"
-                        }
-                    ],
                     "index": 1,
-                    "lineNumber": 27,
+                    "lineNumber": 31,
                     "name": "videoPacketReady",
                     "returnType": "void"
                 },
@@ -45,7 +33,7 @@
                         }
                     ],
                     "index": 2,
-                    "lineNumber": 29,
+                    "lineNumber": 33,
                     "name": "audioCodecParReady",
                     "returnType": "void"
                 },
@@ -62,16 +50,29 @@
                         }
                     ],
                     "index": 3,
-                    "lineNumber": 30,
+                    "lineNumber": 34,
                     "name": "videoCodecParReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "duration",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 36,
+                    "name": "durationReady",
                     "returnType": "void"
                 }
             ],
             "slots": [
                 {
                     "access": "public",
-                    "index": 4,
-                    "lineNumber": 33,
+                    "index": 5,
+                    "lineNumber": 39,
                     "name": "stopDemux",
                     "returnType": "void"
                 }

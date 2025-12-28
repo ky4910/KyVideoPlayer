@@ -14,21 +14,30 @@ AudioDecoder::AudioDecoder()
     wantSpec = {0};
     haveSpec = {0};
 
-    running = false;
+    m_stopping = false;
     processing = false;
 
     m_context = nullptr;
+
+    timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &AudioDecoder::onPosChanged);
 }
 
 AudioDecoder::~AudioDecoder() {}
 
-void AudioDecoder::pushPacket(AVPacket *pkt)
+void AudioDecoder::onPosChanged()
 {
-    // qDebugT() << "push packet from Audio Decoder";
+    double position = m_context->clock.get();
+    emit positionChanged(position);
+}
+
+void AudioDecoder::pushPacket()
+{
+    qDebugT() << "push packet from Audio Decoder";
 
     {
         QMutexLocker locker(&mutex);
-        audioPacQueue.push(pkt);
+        audioPacQueue.push(m_context->audioQueue->pop());
     }
 
     // trigger processing
@@ -43,6 +52,7 @@ void AudioDecoder::onAudioCodecParReady(AVCodecParameters *codecpar, AVRational 
 {
     qDebugT() << "AudioDecoder received codec parameters.";
     // Here you can initialize your decoder with the codecpar
+    timer->start(30);
 
     m_timeBase = timeBase;
 
@@ -105,6 +115,11 @@ void AudioDecoder::processQueuedPackets()
 
     while (true)
     {
+        if (m_stopping)
+        {
+            break;
+        }
+
         AVPacket* pkt = nullptr;
         {
             QMutexLocker locker(&mutex);
@@ -139,7 +154,7 @@ void AudioDecoder::stopDecode()
 {
     qDebugT() << "AudioDecoder::stopDecode called.";
 
-    running = false;
+    m_stopping = true;
 
     // Clear queued packets
     {
@@ -174,6 +189,8 @@ void AudioDecoder::stopDecode()
         avcodec_free_context(&mCodecCtx);
         mCodecCtx = nullptr;
     }
+
+    timer->stop();
 }
 
 void AudioDecoder::processPCM(AVFrame* frame)
@@ -202,7 +219,7 @@ void AudioDecoder::processPCM(AVFrame* frame)
     av_free(out_buf);
 
     m_context->clock.set(pts);
-    qDebugT() << "Audio PTS updated to: " << pts;
+    // qDebugT() << "Audio PTS updated to: " << pts;
 }
 
 PlayContext* AudioDecoder::getContext()

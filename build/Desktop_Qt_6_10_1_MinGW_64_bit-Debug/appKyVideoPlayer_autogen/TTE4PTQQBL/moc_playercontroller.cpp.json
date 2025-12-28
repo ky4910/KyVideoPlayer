@@ -12,14 +12,14 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 2,
+                    "index": 6,
                     "lineNumber": 22,
                     "name": "play",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 3,
+                    "index": 7,
                     "lineNumber": 23,
                     "name": "pause",
                     "returnType": "void"
@@ -32,14 +32,14 @@
                             "type": "double"
                         }
                     ],
-                    "index": 4,
+                    "index": 8,
                     "lineNumber": 24,
                     "name": "seek",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 5,
+                    "index": 9,
                     "lineNumber": 25,
                     "name": "stop",
                     "returnType": "void"
@@ -52,20 +52,66 @@
                             "type": "QObject*"
                         }
                     ],
-                    "index": 6,
+                    "index": 10,
                     "lineNumber": 26,
                     "name": "setVideoOutput",
                     "returnType": "void"
                 }
             ],
             "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 28,
+                    "name": "duration",
+                    "notify": "durationChanged",
+                    "read": "duration",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 29,
+                    "name": "position",
+                    "notify": "positionChanged",
+                    "read": "position",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                }
+            ],
             "qualifiedClassName": "PlayerController",
             "signals": [
                 {
                     "access": "public",
                     "index": 0,
-                    "lineNumber": 29,
+                    "lineNumber": 35,
                     "name": "stopSignal",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 36,
+                    "name": "durationChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 37,
+                    "name": "positionChanged",
                     "returnType": "void"
                 },
                 {
@@ -76,9 +122,37 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 1,
-                    "lineNumber": 30,
+                    "index": 3,
+                    "lineNumber": 38,
                     "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "duration",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 41,
+                    "name": "onDurationChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "position",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 42,
+                    "name": "onPositionChanged",
                     "returnType": "void"
                 }
             ],

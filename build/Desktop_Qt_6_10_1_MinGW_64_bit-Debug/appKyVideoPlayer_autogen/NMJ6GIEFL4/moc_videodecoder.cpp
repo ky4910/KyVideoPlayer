@@ -44,8 +44,6 @@ template <> constexpr inline auto VideoDecoder::qt_create_metaobjectdata<qt_meta
         "AVFrame*",
         "frame",
         "pushPacket",
-        "AVPacket*",
-        "pkt",
         "onVideoCodecParReady",
         "AVCodecParameters*",
         "codecpar",
@@ -65,22 +63,20 @@ template <> constexpr inline auto VideoDecoder::qt_create_metaobjectdata<qt_meta
             { 0x80000000 | 3, 4 },
         }}),
         // Slot 'pushPacket'
-        QtMocHelpers::SlotData<void(AVPacket *)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 6, 7 },
-        }}),
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'onVideoCodecParReady'
-        QtMocHelpers::SlotData<void(AVCodecParameters *, AVRational)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 9, 10 }, { 0x80000000 | 11, 12 },
+        QtMocHelpers::SlotData<void(AVCodecParameters *, AVRational)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 7, 8 }, { 0x80000000 | 9, 10 },
         }}),
         // Slot 'processQueuedPackets'
-        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'stopDecode'
-        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'getContext'
-        QtMocHelpers::SlotData<PlayContext *()>(15, 2, QMC::AccessPublic, 0x80000000 | 16),
+        QtMocHelpers::SlotData<PlayContext *()>(13, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Slot 'setContext'
-        QtMocHelpers::SlotData<void(PlayContext *)>(17, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 16, 18 },
+        QtMocHelpers::SlotData<void(PlayContext *)>(15, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 14, 16 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -106,7 +102,7 @@ void VideoDecoder::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->frameDecoded((*reinterpret_cast<std::add_pointer_t<AVFrame*>>(_a[1]))); break;
-        case 1: _t->pushPacket((*reinterpret_cast<std::add_pointer_t<AVPacket*>>(_a[1]))); break;
+        case 1: _t->pushPacket(); break;
         case 2: _t->onVideoCodecParReady((*reinterpret_cast<std::add_pointer_t<AVCodecParameters*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<AVRational>>(_a[2]))); break;
         case 3: _t->processQueuedPackets(); break;
         case 4: _t->stopDecode(); break;

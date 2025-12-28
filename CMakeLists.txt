@@ -39,6 +39,7 @@ qt_add_executable(appKyVideoPlayer
     Render/videooutputfbo.cpp
     Render/videooutputrenderer.cpp
     PlaybackContext/playcontext.cpp
+    Tools/packetqueue.cpp
 )
 
 include_directories(

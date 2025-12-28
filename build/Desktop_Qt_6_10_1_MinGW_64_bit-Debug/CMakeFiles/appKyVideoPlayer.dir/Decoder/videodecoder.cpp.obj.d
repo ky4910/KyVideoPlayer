@@ -487,6 +487,30 @@ CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj: \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_locale.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_misc.h \
  D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
+ D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdebug.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtextstream.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontiguouscache.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmap.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata_impl.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qset.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qhash.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qalloc.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QWaitCondition \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qwaitcondition.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDeadlineTimer \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
@@ -536,25 +560,6 @@ CMakeFiles/appKyVideoPlayer.dir/Decoder/videodecoder.cpp.obj: \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libswresample/version_major.h \
  D:/Code/QtRelated/KyVideoPlayer/Tools/utils.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdebug.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtextstream.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontiguouscache.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
- D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmap.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata_impl.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qset.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qhash.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qalloc.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QThread \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qthread.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \

@@ -49,11 +49,13 @@ void DemuxWorker::startWork()
         // Otherwise, there will be many emitted signals leading to performance issues when stop playing
         if (pkt->stream_index == audioIndex)
         {
-            emit audioPacketReady(av_packet_clone(pkt));
+            m_context->audioQueue->push(av_packet_clone(pkt));
+            emit audioPacketReady();
         }
         else if (pkt->stream_index == videoIndex)
         {
-            emit videoPacketReady(av_packet_clone(pkt));
+            m_context->videoQueue->push(av_packet_clone(pkt));
+            emit videoPacketReady();
         }
 
         av_packet_unref(pkt);
@@ -167,6 +169,11 @@ bool DemuxWorker::openMedia(QString path)
         return false;
     }
 
+    double duration = fmtCtx->duration / (double)AV_TIME_BASE;
+    qDebugT() << "Media duration: " << duration << " seconds.";
+
+    emit durationReady(duration);
+
     return true;
 }
 
@@ -174,4 +181,24 @@ void DemuxWorker::stopDemux()
 {
     qDebugT() << "DemuxWorker::stopDemux called.";
     running = false;
+
+    m_context->audioQueue->setRunning(false);
+    m_context->videoQueue->setRunning(false);
+
+    if ( fmtCtx )
+    {
+        avformat_close_input(&fmtCtx);
+        avformat_free_context(fmtCtx);
+        fmtCtx = nullptr;
+    }
+}
+
+PlayContext* DemuxWorker::getContext()
+{
+    return m_context;
+}
+
+void DemuxWorker::setContext(PlayContext* context)
+{
+    m_context = context;
 }

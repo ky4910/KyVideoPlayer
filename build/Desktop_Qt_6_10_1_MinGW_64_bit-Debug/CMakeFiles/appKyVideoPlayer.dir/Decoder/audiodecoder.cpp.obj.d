@@ -349,6 +349,12 @@ CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmutex.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtsan_impl.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QTimer \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtimer.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbasictimer.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qeventloop.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_main.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_stdinc.h \
@@ -506,6 +512,11 @@ CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_locale.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_misc.h \
  D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
+ D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QWaitCondition \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qwaitcondition.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDeadlineTimer \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavcodec/packet.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/attributes.h \
  D:/kProject/RelatedLib/ffmpeg60/include/libavutil/buffer.h \
@@ -557,7 +568,6 @@ CMakeFiles/appKyVideoPlayer.dir/Decoder/audiodecoder.cpp.obj: \
  D:/Code/QtRelated/KyVideoPlayer/Tools/utils.h \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QThread \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qthread.h \
- D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h \

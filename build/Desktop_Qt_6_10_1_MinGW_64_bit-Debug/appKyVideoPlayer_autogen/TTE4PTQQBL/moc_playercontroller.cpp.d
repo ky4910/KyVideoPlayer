@@ -5,7 +5,9 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/Code/QtRelated/KyVideoPlayer/Demux/demuxworker.h \
   D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
   D:/Code/QtRelated/KyVideoPlayer/Render/videooutputfbo.h \
+  D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h \
   D:/Code/QtRelated/KyVideoPlayer/Tools/utils.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDeadlineTimer \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QList \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QMutex \
@@ -14,6 +16,8 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QSize \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QSizeF \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QThread \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QTimer \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QWaitCondition \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q17memory.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20functional.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20iterator.h \
@@ -143,6 +147,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtextstream.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtformat_impl.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qthread.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtimer.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmetamacros.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtnoop.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -161,6 +166,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qversionnumber.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qversiontagging.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qwaitcondition.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qxptype_traits.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qyieldcpu.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtGui/QTransform \

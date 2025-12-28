@@ -25,9 +25,21 @@ public:
     Q_INVOKABLE void stop();
     Q_INVOKABLE void setVideoOutput(QObject *videoItem);
 
+    Q_PROPERTY(double duration READ duration NOTIFY durationChanged)
+    Q_PROPERTY(double position READ position NOTIFY positionChanged)
+
+    double duration() const { return m_duration; }
+    double position() const { return m_position; }
+
 signals:
     void stopSignal();
+    void durationChanged();
+    void positionChanged();
     void errorOccurred(const QString &message);
+
+public slots:
+    void onDurationChanged(double duration);
+    void onPositionChanged(double position);
 
 private:
     QThread *dmxThread;
@@ -38,6 +50,9 @@ private:
     AudioDecoder *audioDecoder;
     VideoDecoder *videoDecoder;
     VideoOutputFBO *videoOutputFBO;
+
+    double m_duration;
+    double m_position;
 
     std::unique_ptr<PlayContext> m_ctx;
 };

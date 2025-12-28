@@ -7,6 +7,7 @@
 #include <libavformat/avformat.h>
 
 #include "utils.h"
+#include "playcontext.h"
 
 class DemuxWorker : public QObject
 {
@@ -21,13 +22,18 @@ public:
 
     bool openMedia(QString path);
 
+    PlayContext* getContext();
+    void setContext(PlayContext* context);
+
 signals:
 
-    void audioPacketReady(AVPacket *pkt);
-    void videoPacketReady(AVPacket *pkt);
+    void audioPacketReady();
+    void videoPacketReady();
 
     void audioCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
     void videoCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
+
+    void durationReady(double duration);
 
 public slots:
     void stopDemux();
@@ -37,6 +43,7 @@ private:
     int videoIndex;
     bool running;
     AVFormatContext *fmtCtx;
+    PlayContext* m_context;
 };
 
 #endif // DEMUXWORKER_H

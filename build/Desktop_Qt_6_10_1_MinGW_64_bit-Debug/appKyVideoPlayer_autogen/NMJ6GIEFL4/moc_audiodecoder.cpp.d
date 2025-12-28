@@ -1,14 +1,21 @@
 D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKyVideoPlayer_autogen/NMJ6GIEFL4/moc_audiodecoder.cpp: D:/Code/QtRelated/KyVideoPlayer/Decoder/audiodecoder.h \
   D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKyVideoPlayer_autogen/moc_predefs.h \
   D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
+  D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDeadlineTimer \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDebug \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QMutex \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QObject \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QTimer \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QWaitCondition \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q17memory.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20functional.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20memory.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q20type_traits.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/q23type_traits.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qalgorithms.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qalloc.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qanystringview.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qarraydata.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qarraydataops.h \
@@ -17,6 +24,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qatomic.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbasicatomic.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbasictimer.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbindingstorage.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbytearray.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -32,9 +40,12 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontainerfwd.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontainertools_impl.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qcontiguouscache.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdatastream.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdebug.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qeventloop.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qflags.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qfloat16.h \
@@ -44,6 +55,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qgenericatomic.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qglobal.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qglobalstatic.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qhash.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qhashfunctions.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qiodevicebase.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qiterable.h \
@@ -52,6 +64,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qlist.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qlogging.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmalloc.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmap.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmath.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmetacontainer.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmetatype.h \
@@ -69,6 +82,11 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qrefcount.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qscopedpointer.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qscopeguard.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qset.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qshareddata_impl.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qstdlibdetection.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qstring.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -93,7 +111,9 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtdeprecationdefinitions.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtextstream.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtformat_impl.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtimer.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtmetamacros.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtnoop.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -106,7 +126,9 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtypeinfo.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtypes.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qutf8stringview.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qversiontagging.h \
+  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qwaitcondition.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qxptype_traits.h \
   D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qyieldcpu.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/adxintrin.h \
@@ -224,11 +246,13 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
+  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
@@ -241,6 +265,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
+  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -248,6 +273,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
@@ -288,6 +314,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -310,6 +337,7 @@ D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKy
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/variant \
   D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \

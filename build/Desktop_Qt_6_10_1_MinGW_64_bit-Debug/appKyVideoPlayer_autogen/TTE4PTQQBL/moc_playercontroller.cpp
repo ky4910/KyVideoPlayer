@@ -41,8 +41,14 @@ template <> constexpr inline auto PlayerController::qt_create_metaobjectdata<qt_
         "PlayerController",
         "stopSignal",
         "",
+        "durationChanged",
+        "positionChanged",
         "errorOccurred",
         "message",
+        "onDurationChanged",
+        "duration",
+        "onPositionChanged",
+        "position",
         "play",
         "url",
         "pause",
@@ -56,28 +62,44 @@ template <> constexpr inline auto PlayerController::qt_create_metaobjectdata<qt_
     QtMocHelpers::UintData qt_methods {
         // Signal 'stopSignal'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'durationChanged'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'positionChanged'
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'errorOccurred'
-        QtMocHelpers::SignalData<void(const QString &)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 4 },
-        }}),
-        // Method 'play'
-        QtMocHelpers::MethodData<void(QString)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SignalData<void(const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 6 },
         }}),
+        // Slot 'onDurationChanged'
+        QtMocHelpers::SlotData<void(double)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Double, 8 },
+        }}),
+        // Slot 'onPositionChanged'
+        QtMocHelpers::SlotData<void(double)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Double, 10 },
+        }}),
+        // Method 'play'
+        QtMocHelpers::MethodData<void(QString)>(11, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 12 },
+        }}),
         // Method 'pause'
-        QtMocHelpers::MethodData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(13, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'seek'
-        QtMocHelpers::MethodData<void(double)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Double, 9 },
+        QtMocHelpers::MethodData<void(double)>(14, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Double, 15 },
         }}),
         // Method 'stop'
-        QtMocHelpers::MethodData<void()>(10, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(16, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'setVideoOutput'
-        QtMocHelpers::MethodData<void(QObject *)>(11, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QObjectStar, 12 },
+        QtMocHelpers::MethodData<void(QObject *)>(17, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QObjectStar, 18 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
+        // property 'duration'
+        QtMocHelpers::PropertyData<double>(8, QMetaType::Double, QMC::DefaultPropertyFlags, 1),
+        // property 'position'
+        QtMocHelpers::PropertyData<double>(10, QMetaType::Double, QMC::DefaultPropertyFlags, 2),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -100,20 +122,36 @@ void PlayerController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->stopSignal(); break;
-        case 1: _t->errorOccurred((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->play((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 3: _t->pause(); break;
-        case 4: _t->seek((*reinterpret_cast<std::add_pointer_t<double>>(_a[1]))); break;
-        case 5: _t->stop(); break;
-        case 6: _t->setVideoOutput((*reinterpret_cast<std::add_pointer_t<QObject*>>(_a[1]))); break;
+        case 1: _t->durationChanged(); break;
+        case 2: _t->positionChanged(); break;
+        case 3: _t->errorOccurred((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->onDurationChanged((*reinterpret_cast<std::add_pointer_t<double>>(_a[1]))); break;
+        case 5: _t->onPositionChanged((*reinterpret_cast<std::add_pointer_t<double>>(_a[1]))); break;
+        case 6: _t->play((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 7: _t->pause(); break;
+        case 8: _t->seek((*reinterpret_cast<std::add_pointer_t<double>>(_a[1]))); break;
+        case 9: _t->stop(); break;
+        case 10: _t->setVideoOutput((*reinterpret_cast<std::add_pointer_t<QObject*>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (PlayerController::*)()>(_a, &PlayerController::stopSignal, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (PlayerController::*)(const QString & )>(_a, &PlayerController::errorOccurred, 1))
+        if (QtMocHelpers::indexOfMethod<void (PlayerController::*)()>(_a, &PlayerController::durationChanged, 1))
             return;
+        if (QtMocHelpers::indexOfMethod<void (PlayerController::*)()>(_a, &PlayerController::positionChanged, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (PlayerController::*)(const QString & )>(_a, &PlayerController::errorOccurred, 3))
+            return;
+    }
+    if (_c == QMetaObject::ReadProperty) {
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: *reinterpret_cast<double*>(_v) = _t->duration(); break;
+        case 1: *reinterpret_cast<double*>(_v) = _t->position(); break;
+        default: break;
+        }
     }
 }
 
@@ -136,14 +174,20 @@ int PlayerController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 11;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 11;
+    }
+    if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
+            || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
+            || _c == QMetaObject::RegisterPropertyMetaType) {
+        qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
     }
     return _id;
 }
@@ -155,8 +199,20 @@ void PlayerController::stopSignal()
 }
 
 // SIGNAL 1
+void PlayerController::durationChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void PlayerController::positionChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
 void PlayerController::errorOccurred(const QString & _t1)
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
 }
 QT_WARNING_POP

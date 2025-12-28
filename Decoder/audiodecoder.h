@@ -4,6 +4,7 @@
 #include <queue>
 #include <QObject>
 #include <QMutex>
+#include <QTimer>
 
 #define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
@@ -30,13 +31,18 @@ private:
     void processPCM(AVFrame* frame);
 
 public slots:
-    void pushPacket(AVPacket *pkt);
+    void pushPacket();
     void onAudioCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
     void processQueuedPackets();
     void stopDecode();
 
     PlayContext* getContext();
     void setContext(PlayContext* context);
+
+    void onPosChanged();
+
+signals:
+    void positionChanged(double position);
 
 private:
     QMutex mutex;
@@ -46,12 +52,14 @@ private:
     SDL_AudioSpec   wantSpec, haveSpec;
     SDL_AudioDeviceID audioDeviceId;
 
-    bool running;
+    bool m_stopping;
     bool processing;
     std::queue<AVPacket*> audioPacQueue;
 
     PlayContext* m_context;
     AVRational m_timeBase;
+
+    QTimer* timer;
 };
 
 #endif // AUDIODECODER_H

@@ -412,6 +412,20 @@ CMakeFiles/appKyVideoPlayer.dir/Demux/demuxworker.cpp.obj: \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QObject \
  D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qobject.h \
  D:/Code/QtRelated/KyVideoPlayer/Tools/utils.h \
+ D:/Code/QtRelated/KyVideoPlayer/PlaybackContext/playcontext.h \
+ D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+ D:/SW/QtCreator18/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QMutex \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qmutex.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qtsan_impl.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QWaitCondition \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qwaitcondition.h \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/QDeadlineTimer \
+ D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_main.h \
  D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include/SDL2/SDL_stdinc.h \

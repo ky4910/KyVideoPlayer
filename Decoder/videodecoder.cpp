@@ -21,18 +21,13 @@ VideoDecoder::VideoDecoder(QObject *parent)
 
 VideoDecoder::~VideoDecoder() {}
 
-void VideoDecoder::pushPacket(AVPacket *pkt)
+void VideoDecoder::pushPacket()
 {
-    // qDebugT () << "push packet from Video Decoder";
-    // if (m_stopping)
-    // {
-    //     av_packet_free(&pkt);
-    //     return;
-    // }
+    qDebugT () << "push packet from Video Decoder";
 
     {
         QMutexLocker locker(&mutex);
-        videoPacQueue.push(pkt);
+        videoPacQueue.push(m_context->videoQueue->pop());
     }
 
     // trigger processing
@@ -62,6 +57,11 @@ void VideoDecoder::processQueuedPackets()
 
     while (true)
     {
+        if ( m_stopping )
+        {
+            break;
+        }
+
         AVPacket* pkt = nullptr;
         {
             QMutexLocker locker(&mutex);
@@ -90,7 +90,7 @@ void VideoDecoder::processQueuedPackets()
                 double videoPts = pts * av_q2d(m_timeBase);
                 double audioPts = m_context->clock.get();
                 double diff = videoPts - audioPts;
-                qDebugT() << "Video PTS: " << videoPts << ", Audio PTS: " << audioPts;
+                // qDebugT() << "Video PTS: " << videoPts << ", Audio PTS: " << audioPts;
                 // QThread::msleep(30);
                 syncAndSend(out, diff);
                 // emit frameDecoded(out);

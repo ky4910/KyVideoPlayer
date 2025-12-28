@@ -23,12 +23,6 @@
             "slots": [
                 {
                     "access": "public",
-                    "arguments": [
-                        {
-                            "name": "pkt",
-                            "type": "AVPacket*"
-                        }
-                    ],
                     "index": 1,
                     "lineNumber": 34,
                     "name": "pushPacket",

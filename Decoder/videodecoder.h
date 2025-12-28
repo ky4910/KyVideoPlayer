@@ -31,7 +31,7 @@ signals:
     void frameDecoded(AVFrame* frame);
 
 public slots:
-    void pushPacket(AVPacket *pkt);
+    void pushPacket();
     void onVideoCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
     void processQueuedPackets();
     void stopDecode();

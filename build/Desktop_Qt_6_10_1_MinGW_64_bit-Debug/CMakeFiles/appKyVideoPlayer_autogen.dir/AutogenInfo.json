@@ -1209,6 +1209,12 @@
 			"Mu",
 			"Q6Y7IZYM6X/moc_videooutputrenderer.cpp",
 			null
+		],
+		[
+			"D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.h",
+			"Mu",
+			"WKHKOO7AB7/moc_packetqueue.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1338,6 +1344,7 @@
 			"Mu",
 			null
 		],
+		[ "D:/Code/QtRelated/KyVideoPlayer/Tools/packetqueue.cpp", "Mu", null ],
 		[ "D:/Code/QtRelated/KyVideoPlayer/main.cpp", "Mu", null ]
 	],
 	"USE_BETTER_GRAPH" : true,

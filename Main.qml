@@ -48,6 +48,51 @@ Window
         }
     }
 
+    Slider
+    {
+        id: progressSlider
+        from: 0
+        to: 100
+        clip: false
+
+        anchors
+        {
+            left: parent.left
+            right: parent.right
+            bottom: urlField.top
+            leftMargin: 20
+            rightMargin: 20
+            bottomMargin: 20
+        }
+
+        background: Rectangle {
+            x: progressSlider.leftPadding
+            y: progressSlider.topPadding + progressSlider.availableHeight / 2 - height / 2
+            width: progressSlider.availableWidth
+            height: 3
+            radius: 1.5
+            color: "#cccccc"
+
+            Rectangle {
+                width: progressSlider.visualPosition * parent.width
+                height: parent.height
+                radius: 1.5
+                color: "#ff9800"
+            }
+        }
+
+        handle: Rectangle {
+                x: progressSlider.leftPadding + progressSlider.visualPosition * (progressSlider.availableWidth - width)
+                y: progressSlider.topPadding + progressSlider.availableHeight / 2 - height / 2
+                implicitWidth: 10
+                implicitHeight: 10
+                radius: 5
+                color: progressSlider.pressed ? "#ff9800" : "#ffffff"
+                border.color: "#666666"
+                border.width: 1
+            }
+    }
+
     // URL Input
     TextField
     {
@@ -99,6 +144,7 @@ Window
 
             onClicked:
             {
+                btnplay.text = btnplay.text === qsTr("Play") ? qsTr("Pause") : qsTr("Play")
                 if (urlField.text && urlField.text.length > 0)
                     playerController.play(urlField.text)
             }
@@ -132,6 +178,32 @@ Window
 
             // onClicked: openDialog.open()
             onClicked: playerController.stop()
+        }
+
+        Text
+        {
+            id: timeField
+            font.pixelSize: 16
+            color: "#fffb00ff"
+            verticalAlignment: Text.AlignVCenter
+            text:
+            {
+                function fmt(seconds)
+                {
+                    seconds = (seconds && seconds > 0) ? seconds : 0
+                    var total = Math.floor(seconds)
+                    var m = Math.floor(total / 60)
+                    var s = total % 60
+                    return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s
+                }
+
+                var dur = (playerController && playerController.duration !== undefined) ? playerController.duration : 0
+                var pos = (playerController && playerController.position !== undefined)
+                    ? playerController.position
+                    : Math.round(progressSlider.value / progressSlider.to * dur)
+
+                return fmt(pos) + "/" + fmt(dur)
+            }
         }
     }
 

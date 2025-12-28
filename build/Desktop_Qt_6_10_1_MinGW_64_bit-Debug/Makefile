@@ -549,6 +549,30 @@ Render/videooutputrenderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.s
 .PHONY : Render/videooutputrenderer.cpp.s
 
+Tools/packetqueue.obj: Tools/packetqueue.cpp.obj
+.PHONY : Tools/packetqueue.obj
+
+# target to build an object file
+Tools/packetqueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Tools/packetqueue.cpp.obj
+.PHONY : Tools/packetqueue.cpp.obj
+
+Tools/packetqueue.i: Tools/packetqueue.cpp.i
+.PHONY : Tools/packetqueue.i
+
+# target to preprocess a source file
+Tools/packetqueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Tools/packetqueue.cpp.i
+.PHONY : Tools/packetqueue.cpp.i
+
+Tools/packetqueue.s: Tools/packetqueue.cpp.s
+.PHONY : Tools/packetqueue.s
+
+# target to generate assembly for a file
+Tools/packetqueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appKyVideoPlayer.dir\build.make CMakeFiles/appKyVideoPlayer.dir/Tools/packetqueue.cpp.s
+.PHONY : Tools/packetqueue.cpp.s
+
 appKyVideoPlayer_autogen/mocs_compilation.obj: appKyVideoPlayer_autogen/mocs_compilation.cpp.obj
 .PHONY : appKyVideoPlayer_autogen/mocs_compilation.obj
 
@@ -767,6 +791,9 @@ help:
 	@echo ... Render/videooutputrenderer.obj
 	@echo ... Render/videooutputrenderer.i
 	@echo ... Render/videooutputrenderer.s
+	@echo ... Tools/packetqueue.obj
+	@echo ... Tools/packetqueue.i
+	@echo ... Tools/packetqueue.s
 	@echo ... appKyVideoPlayer_autogen/mocs_compilation.obj
 	@echo ... appKyVideoPlayer_autogen/mocs_compilation.i
 	@echo ... appKyVideoPlayer_autogen/mocs_compilation.s

@@ -2,20 +2,29 @@
     "classes": [
         {
             "className": "AudioDecoder",
-            "lineNumber": 21,
+            "lineNumber": 22,
             "object": true,
             "qualifiedClassName": "AudioDecoder",
-            "slots": [
+            "signals": [
                 {
                     "access": "public",
                     "arguments": [
                         {
-                            "name": "pkt",
-                            "type": "AVPacket*"
+                            "name": "position",
+                            "type": "double"
                         }
                     ],
                     "index": 0,
-                    "lineNumber": 33,
+                    "lineNumber": 45,
+                    "name": "positionChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 34,
                     "name": "pushPacket",
                     "returnType": "void"
                 },
@@ -31,29 +40,29 @@
                             "type": "AVRational"
                         }
                     ],
-                    "index": 1,
-                    "lineNumber": 34,
-                    "name": "onAudioCodecParReady",
-                    "returnType": "void"
-                },
-                {
-                    "access": "public",
                     "index": 2,
                     "lineNumber": 35,
-                    "name": "processQueuedPackets",
+                    "name": "onAudioCodecParReady",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 3,
                     "lineNumber": 36,
-                    "name": "stopDecode",
+                    "name": "processQueuedPackets",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 4,
-                    "lineNumber": 38,
+                    "lineNumber": 37,
+                    "name": "stopDecode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "lineNumber": 39,
                     "name": "getContext",
                     "returnType": "PlayContext*"
                 },
@@ -65,9 +74,16 @@
                             "type": "PlayContext*"
                         }
                     ],
-                    "index": 5,
-                    "lineNumber": 39,
+                    "index": 6,
+                    "lineNumber": 40,
                     "name": "setContext",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "lineNumber": 42,
+                    "name": "onPosChanged",
                     "returnType": "void"
                 }
             ],

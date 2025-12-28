@@ -22,7 +22,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 37,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
@@ -61,6 +61,10 @@
 	[
 		{
 			"backtrace" : 0,
+			"id" : "appKyVideoPlayer_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
 			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -70,10 +74,6 @@
 		{
 			"backtrace" : 6,
 			"id" : "appKyVideoPlayer_copy_res::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "appKyVideoPlayer_qmlimportscan::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appKyVideoPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",

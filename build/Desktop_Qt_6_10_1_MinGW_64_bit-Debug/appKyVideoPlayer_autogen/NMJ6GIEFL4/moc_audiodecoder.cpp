@@ -39,10 +39,10 @@ template <> constexpr inline auto AudioDecoder::qt_create_metaobjectdata<qt_meta
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "AudioDecoder",
-        "pushPacket",
+        "positionChanged",
         "",
-        "AVPacket*",
-        "pkt",
+        "position",
+        "pushPacket",
         "onAudioCodecParReady",
         "AVCodecParameters*",
         "codecpar",
@@ -53,14 +53,17 @@ template <> constexpr inline auto AudioDecoder::qt_create_metaobjectdata<qt_meta
         "getContext",
         "PlayContext*",
         "setContext",
-        "context"
+        "context",
+        "onPosChanged"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'pushPacket'
-        QtMocHelpers::SlotData<void(AVPacket *)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 3, 4 },
+        // Signal 'positionChanged'
+        QtMocHelpers::SignalData<void(double)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Double, 3 },
         }}),
+        // Slot 'pushPacket'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'onAudioCodecParReady'
         QtMocHelpers::SlotData<void(AVCodecParameters *, AVRational)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
             { 0x80000000 | 6, 7 }, { 0x80000000 | 8, 9 },
@@ -75,6 +78,8 @@ template <> constexpr inline auto AudioDecoder::qt_create_metaobjectdata<qt_meta
         QtMocHelpers::SlotData<void(PlayContext *)>(14, 2, QMC::AccessPublic, QMetaType::Void, {{
             { 0x80000000 | 13, 15 },
         }}),
+        // Slot 'onPosChanged'
+        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -98,15 +103,21 @@ void AudioDecoder::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     auto *_t = static_cast<AudioDecoder *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->pushPacket((*reinterpret_cast<std::add_pointer_t<AVPacket*>>(_a[1]))); break;
-        case 1: _t->onAudioCodecParReady((*reinterpret_cast<std::add_pointer_t<AVCodecParameters*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<AVRational>>(_a[2]))); break;
-        case 2: _t->processQueuedPackets(); break;
-        case 3: _t->stopDecode(); break;
-        case 4: { PlayContext* _r = _t->getContext();
+        case 0: _t->positionChanged((*reinterpret_cast<std::add_pointer_t<double>>(_a[1]))); break;
+        case 1: _t->pushPacket(); break;
+        case 2: _t->onAudioCodecParReady((*reinterpret_cast<std::add_pointer_t<AVCodecParameters*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<AVRational>>(_a[2]))); break;
+        case 3: _t->processQueuedPackets(); break;
+        case 4: _t->stopDecode(); break;
+        case 5: { PlayContext* _r = _t->getContext();
             if (_a[0]) *reinterpret_cast<PlayContext**>(_a[0]) = std::move(_r); }  break;
-        case 5: _t->setContext((*reinterpret_cast<std::add_pointer_t<PlayContext*>>(_a[1]))); break;
+        case 6: _t->setContext((*reinterpret_cast<std::add_pointer_t<PlayContext*>>(_a[1]))); break;
+        case 7: _t->onPosChanged(); break;
         default: ;
         }
+    }
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (AudioDecoder::*)(double )>(_a, &AudioDecoder::positionChanged, 0))
+            return;
     }
 }
 
@@ -129,15 +140,21 @@ int AudioDecoder::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 8;
     }
     return _id;
+}
+
+// SIGNAL 0
+void AudioDecoder::positionChanged(double _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }
 QT_WARNING_POP

@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputfbo.cpp.obj.d"
   "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj"
   "CMakeFiles/appKyVideoPlayer.dir/Render/videooutputrenderer.cpp.obj.d"
+  "CMakeFiles/appKyVideoPlayer.dir/Tools/packetqueue.cpp.obj"
+  "CMakeFiles/appKyVideoPlayer.dir/Tools/packetqueue.cpp.obj.d"
   "CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/appKyVideoPlayer.dir/appKyVideoPlayer_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/appKyVideoPlayer.dir/appkyvideoplayer_qmltyperegistrations.cpp.obj"

@@ -5,6 +5,8 @@
 
 #include <atomic>
 
+#include "packetqueue.h"
+
 struct AVClock
 {
     void reset() { pts.store(0.0); }
@@ -18,6 +20,8 @@ private:
 struct PlayContext
 {
     AVClock clock;
+    PacketQueue *audioQueue;
+    PacketQueue *videoQueue;
     std::atomic<bool> running{false};
     std::atomic<bool> paused{false};
     double speed = 1.0;

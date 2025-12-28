@@ -41,8 +41,6 @@ template <> constexpr inline auto DemuxWorker::qt_create_metaobjectdata<qt_meta_
         "DemuxWorker",
         "audioPacketReady",
         "",
-        "AVPacket*",
-        "pkt",
         "videoPacketReady",
         "audioCodecParReady",
         "AVCodecParameters*",
@@ -50,25 +48,27 @@ template <> constexpr inline auto DemuxWorker::qt_create_metaobjectdata<qt_meta_
         "AVRational",
         "timeBase",
         "videoCodecParReady",
+        "durationReady",
+        "duration",
         "stopDemux"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'audioPacketReady'
-        QtMocHelpers::SignalData<void(AVPacket *)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 3, 4 },
-        }}),
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'videoPacketReady'
-        QtMocHelpers::SignalData<void(AVPacket *)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 3, 4 },
-        }}),
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'audioCodecParReady'
-        QtMocHelpers::SignalData<void(AVCodecParameters *, AVRational)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 7, 8 }, { 0x80000000 | 9, 10 },
+        QtMocHelpers::SignalData<void(AVCodecParameters *, AVRational)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 }, { 0x80000000 | 7, 8 },
         }}),
         // Signal 'videoCodecParReady'
-        QtMocHelpers::SignalData<void(AVCodecParameters *, AVRational)>(11, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 7, 8 }, { 0x80000000 | 9, 10 },
+        QtMocHelpers::SignalData<void(AVCodecParameters *, AVRational)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 }, { 0x80000000 | 7, 8 },
+        }}),
+        // Signal 'durationReady'
+        QtMocHelpers::SignalData<void(double)>(10, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Double, 11 },
         }}),
         // Slot 'stopDemux'
         QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPublic, QMetaType::Void),
@@ -95,22 +95,25 @@ void DemuxWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     auto *_t = static_cast<DemuxWorker *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->audioPacketReady((*reinterpret_cast<std::add_pointer_t<AVPacket*>>(_a[1]))); break;
-        case 1: _t->videoPacketReady((*reinterpret_cast<std::add_pointer_t<AVPacket*>>(_a[1]))); break;
+        case 0: _t->audioPacketReady(); break;
+        case 1: _t->videoPacketReady(); break;
         case 2: _t->audioCodecParReady((*reinterpret_cast<std::add_pointer_t<AVCodecParameters*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<AVRational>>(_a[2]))); break;
         case 3: _t->videoCodecParReady((*reinterpret_cast<std::add_pointer_t<AVCodecParameters*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<AVRational>>(_a[2]))); break;
-        case 4: _t->stopDemux(); break;
+        case 4: _t->durationReady((*reinterpret_cast<std::add_pointer_t<double>>(_a[1]))); break;
+        case 5: _t->stopDemux(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)(AVPacket * )>(_a, &DemuxWorker::audioPacketReady, 0))
+        if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)()>(_a, &DemuxWorker::audioPacketReady, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)(AVPacket * )>(_a, &DemuxWorker::videoPacketReady, 1))
+        if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)()>(_a, &DemuxWorker::videoPacketReady, 1))
             return;
         if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)(AVCodecParameters * , AVRational )>(_a, &DemuxWorker::audioCodecParReady, 2))
             return;
         if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)(AVCodecParameters * , AVRational )>(_a, &DemuxWorker::videoCodecParReady, 3))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (DemuxWorker::*)(double )>(_a, &DemuxWorker::durationReady, 4))
             return;
     }
 }
@@ -134,28 +137,28 @@ int DemuxWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }
 
 // SIGNAL 0
-void DemuxWorker::audioPacketReady(AVPacket * _t1)
+void DemuxWorker::audioPacketReady()
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
-void DemuxWorker::videoPacketReady(AVPacket * _t1)
+void DemuxWorker::videoPacketReady()
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
@@ -168,5 +171,11 @@ void DemuxWorker::audioCodecParReady(AVCodecParameters * _t1, AVRational _t2)
 void DemuxWorker::videoCodecParReady(AVCodecParameters * _t1, AVRational _t2)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1, _t2);
+}
+
+// SIGNAL 4
+void DemuxWorker::durationReady(double _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 4, nullptr, _t1);
 }
 QT_WARNING_POP

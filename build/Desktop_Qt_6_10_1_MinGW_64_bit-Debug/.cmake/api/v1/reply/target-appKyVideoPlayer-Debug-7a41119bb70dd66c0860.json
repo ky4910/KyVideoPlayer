@@ -28,13 +28,13 @@
 			"qt6_add_qml_module",
 			"qt_add_qml_module",
 			"add_dependencies",
-			"_qt_internal_write_deferred_qmlls_build_ini_file",
-			"_qt_internal_qml_copy_files_to_build_dir",
 			"_qt_internal_scan_qml_imports",
 			"_qt_internal_generate_deploy_qml_imports_script",
 			"cmake_language",
 			"_qt_internal_finalize_executable",
 			"qt6_finalize_target",
+			"_qt_internal_write_deferred_qmlls_build_ini_file",
+			"_qt_internal_qml_copy_files_to_build_dir",
 			"add_definitions",
 			"include_directories",
 			"target_include_directories",
@@ -72,8 +72,8 @@
 			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
 			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
 			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
-			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:1099:EVAL",
-			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:846:EVAL"
+			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:846:EVAL",
+			"D:/SW/QtCreator18/6.10.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:1099:EVAL"
 		],
 		"nodes" : 
 		[
@@ -107,7 +107,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 87,
+				"line" : 95,
 				"parent" : 0
 			},
 			{
@@ -119,7 +119,7 @@
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 70,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
@@ -211,7 +211,7 @@
 			{
 				"command" : 13,
 				"file" : 1,
-				"line" : 37,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
@@ -422,8 +422,44 @@
 				"parent" : 0
 			},
 			{
-				"command" : 15,
+				"command" : 19,
 				"file" : 21,
+				"line" : 1,
+				"parent" : 62
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 877,
+				"parent" : 63
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 799,
+				"parent" : 64
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 799,
+				"parent" : 65
+			},
+			{
+				"command" : 15,
+				"file" : 10,
+				"line" : 4780,
+				"parent" : 66
+			},
+			{
+				"command" : 14,
+				"file" : 10,
+				"line" : 4555,
+				"parent" : 67
+			},
+			{
+				"command" : 20,
+				"file" : 22,
 				"line" : 1,
 				"parent" : 62
 			},
@@ -431,10 +467,10 @@
 				"command" : 14,
 				"file" : 10,
 				"line" : 1388,
-				"parent" : 63
+				"parent" : 69
 			},
 			{
-				"command" : 16,
+				"command" : 21,
 				"file" : 10,
 				"line" : 970,
 				"parent" : 25
@@ -443,10 +479,10 @@
 				"command" : 14,
 				"file" : 10,
 				"line" : 3120,
-				"parent" : 65
+				"parent" : 71
 			},
 			{
-				"command" : 16,
+				"command" : 21,
 				"file" : 10,
 				"line" : 976,
 				"parent" : 25
@@ -455,42 +491,6 @@
 				"command" : 14,
 				"file" : 10,
 				"line" : 3120,
-				"parent" : 67
-			},
-			{
-				"command" : 21,
-				"file" : 22,
-				"line" : 1,
-				"parent" : 62
-			},
-			{
-				"command" : 20,
-				"file" : 0,
-				"line" : 877,
-				"parent" : 69
-			},
-			{
-				"command" : 19,
-				"file" : 0,
-				"line" : 799,
-				"parent" : 70
-			},
-			{
-				"command" : 18,
-				"file" : 0,
-				"line" : 799,
-				"parent" : 71
-			},
-			{
-				"command" : 17,
-				"file" : 10,
-				"line" : 4780,
-				"parent" : 72
-			},
-			{
-				"command" : 14,
-				"file" : 10,
-				"line" : 4555,
 				"parent" : 73
 			},
 			{
@@ -506,6 +506,12 @@
 				"parent" : 0
 			},
 			{
+				"command" : 23,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
 				"command" : 25,
 				"file" : 10,
 				"line" : 835,
@@ -515,37 +521,37 @@
 				"command" : 24,
 				"file" : 10,
 				"line" : 4253,
-				"parent" : 77
+				"parent" : 78
 			},
 			{
 				"command" : 24,
 				"file" : 10,
 				"line" : 4283,
-				"parent" : 77
+				"parent" : 78
 			},
 			{
 				"command" : 27,
 				"file" : 10,
 				"line" : 4078,
-				"parent" : 77
+				"parent" : 78
 			},
 			{
 				"command" : 26,
 				"file" : 0,
 				"line" : 1577,
-				"parent" : 80
+				"parent" : 81
 			},
 			{
 				"command" : 26,
 				"file" : 10,
 				"line" : 4244,
-				"parent" : 77
+				"parent" : 78
 			},
 			{
 				"command" : 28,
 				"file" : 10,
 				"line" : 4275,
-				"parent" : 77
+				"parent" : 78
 			},
 			{
 				"command" : 31,
@@ -557,25 +563,19 @@
 				"command" : 30,
 				"file" : 0,
 				"line" : 405,
-				"parent" : 84
+				"parent" : 85
 			},
 			{
 				"command" : 29,
 				"file" : 0,
 				"line" : 2623,
-				"parent" : 85
+				"parent" : 86
 			},
 			{
 				"command" : 26,
 				"file" : 0,
 				"line" : 2163,
-				"parent" : 86
-			},
-			{
-				"command" : 26,
-				"file" : 10,
-				"line" : 934,
-				"parent" : 25
+				"parent" : 87
 			},
 			{
 				"command" : 32,
@@ -635,7 +635,7 @@
 				"command" : 34,
 				"file" : 0,
 				"line" : 871,
-				"parent" : 69
+				"parent" : 63
 			},
 			{
 				"command" : 26,
@@ -736,36 +736,60 @@
 					"path" : "D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include"
 				},
 				{
-					"backtrace" : 78,
-					"path" : "D:/Code/QtRelated/KyVideoPlayer"
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Controller"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Decoder"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Demux"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Render"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/PlaybackContext"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Tools"
 				},
 				{
 					"backtrace" : 79,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer"
+				},
+				{
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQml"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQmlIntegration"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtNetwork"
 				},
@@ -790,18 +814,18 @@
 			[
 				0,
 				1,
+				2,
+				3,
 				4,
+				5,
 				6,
+				7,
 				8,
-				10,
+				9,
 				12,
 				14,
-				16,
-				18,
-				20,
-				22,
-				23,
-				24
+				15,
+				16
 			]
 		},
 		{
@@ -811,7 +835,7 @@
 					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
 				},
 				{
-					"backtrace" : 83,
+					"backtrace" : 84,
 					"fragment" : "-Wa,-mbig-obj"
 				}
 			],
@@ -897,36 +921,60 @@
 					"path" : "D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32/include"
 				},
 				{
-					"backtrace" : 78,
-					"path" : "D:/Code/QtRelated/KyVideoPlayer"
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Controller"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Decoder"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Demux"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Render"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/PlaybackContext"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer/Tools"
 				},
 				{
 					"backtrace" : 79,
+					"path" : "D:/Code/QtRelated/KyVideoPlayer"
+				},
+				{
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQml"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtQmlIntegration"
 				},
 				{
-					"backtrace" : 79,
+					"backtrace" : 80,
 					"isSystem" : true,
 					"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/include/QtNetwork"
 				},
@@ -949,34 +997,34 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				3
+				11
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "appKyVideoPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 68,
+			"id" : "appKyVideoPlayer_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 64,
+			"backtrace" : 70,
 			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 66,
+			"backtrace" : 72,
 			"id" : "appKyVideoPlayer_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 68,
-			"id" : "appKyVideoPlayer_copy_res::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 74,
-			"id" : "appKyVideoPlayer_qmlimportscan::@6890427a1f51a3e7e1df"
+			"id" : "appKyVideoPlayer_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
 			"id" : "appKyVideoPlayer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "appKyVideoPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appKyVideoPlayer::@6890427a1f51a3e7e1df",
@@ -1153,41 +1201,27 @@
 			[
 				0,
 				1,
+				2,
+				3,
+				4,
+				5,
 				6,
+				7,
 				8,
-				10,
-				12,
-				14,
-				16,
-				18,
-				20,
-				21
+				9,
+				13
 			]
 		},
 		{
 			"name" : "Source Files\\Generated",
 			"sourceIndexes" : 
 			[
-				2,
-				3,
-				4,
-				22,
-				23,
-				24,
-				25,
-				27
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				5,
-				7,
-				9,
+				10,
 				11,
-				13,
+				12,
+				14,
 				15,
+				16,
 				17,
 				19
 			]
@@ -1196,35 +1230,35 @@
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				26
+				18
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				28,
-				38,
-				39,
-				40,
-				41,
-				42,
-				43
+				20,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				29,
-				30,
-				31,
-				32,
-				33,
-				34,
-				35,
-				36,
-				37
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
 			]
 		}
 	],
@@ -1244,112 +1278,72 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 81,
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Controller/playercontroller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Decoder/audiodecoder.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Decoder/videodecoder.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Demux/demuxworker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Render/videooutputfbo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Render/videooutputrenderer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "PlaybackContext/playcontext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Tools/packetqueue.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 82,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/meta_types/qt6appkyvideoplayer_metatypes.json.gen",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 82,
+			"backtrace" : 83,
 			"compileGroupIndex" : 1,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appkyvideoplayer_qmltyperegistrations.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 87,
+			"backtrace" : 88,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 88,
-			"path" : "minedecoder.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "minedecoder.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "playercontroller.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "playercontroller.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "demuxworker.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "demuxworker.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "audiodecoder.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "audiodecoder.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "videodecoder.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "videodecoder.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "utils.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "utils.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "videooutputfbo.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "videooutputfbo.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 88,
-			"path" : "videooutputrenderer.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 88,
-			"compileGroupIndex" : 0,
-			"path" : "videooutputrenderer.cpp",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 90,
@@ -1387,7 +1381,7 @@
 			"backtrace" : 99,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/KyVideoPlayer/qmldir",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 99,
@@ -1399,91 +1393,91 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKyVideoPlayer_autogen/timestamp",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/meta_types/qt6appkyvideoplayer_metatypes.json.gen.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appkyvideoplayer_qmltyperegistrations.cpp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_KyVideoPlayer.cpp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_qmlcache_loader.cpp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appKyVideoPlayer_Main_qml.cpp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appKyVideoPlayer_raw_qml_0.cpp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appKyVideoPlayer_autogen/timestamp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/meta_types/appKyVideoPlayer_json_file_list.txt.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/meta_types/qt6appkyvideoplayer_metatypes.json.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 34,
 			"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/metatypes/qt6core_metatypes.json",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 26,
 			"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/metatypes/qt6qml_metatypes.json",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 26,
 			"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/metatypes/qt6network_metatypes.json",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 7,
 			"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/metatypes/qt6quick_metatypes.json",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 7,
 			"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/metatypes/qt6gui_metatypes.json",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 7,
 			"path" : "D:/SW/QtCreator18/6.10.1/mingw_64/metatypes/qt6opengl_metatypes.json",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		}
 	],
 	"type" : "EXECUTABLE"
