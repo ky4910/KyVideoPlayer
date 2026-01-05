@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/KyVideoPlayer/">
-    <file alias="Main.qml">D:/Code/QtRelated/KyVideoPlayer/Main.qml</file>
-  </qresource>
-</RCC>
-

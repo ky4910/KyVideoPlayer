@@ -1,6 +1,0 @@
-module KyVideoPlayer
-typeinfo appKyVideoPlayer.qmltypes
-prefer :/qt/qml/KyVideoPlayer/
-Main 1.0 Main.qml
-depends QtQuick
-

@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/KyVideoPlayer">
-    <file alias="qmldir">D:/Code/QtRelated/KyVideoPlayer/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/KyVideoPlayer/qmldir</file>
-  </qresource>
-</RCC>
-
