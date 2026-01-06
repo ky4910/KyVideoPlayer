@@ -3,13 +3,14 @@ import QtQuick.Controls
 import QtQuick.Dialogs
 import QtQuick.Controls.Basic
 import CustomFBO 1.0
+import PlayerCtl 1.0
 
 Window
 {
-    width: 640
-    height: 480
+    width: 960
+    height: 540
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("My Video Player")
     color: active ? palette.active.window : palette.inactive.window
 
     FileDialog
@@ -54,6 +55,7 @@ Window
         from: 0
         to: 100
         clip: false
+        value: playerController.position / playerController.duration * 100
 
         anchors
         {
@@ -144,9 +146,29 @@ Window
 
             onClicked:
             {
-                btnplay.text = btnplay.text === qsTr("Play") ? qsTr("Pause") : qsTr("Play")
-                if (urlField.text && urlField.text.length > 0)
-                    playerController.play(urlField.text)
+                btnplay.text = ( btnplay.text === qsTr("Play") ) ? qsTr("Pause") : qsTr("Play")
+                if ( btnplay.text === qsTr("Play") )
+                {
+                    if (playerController.playState === PlayState.Playing)
+                    {
+                        playerController.pause()
+                    }
+                    else
+                    {
+                        playerController.play(urlField.text)
+                    }
+                }
+                else
+                {
+                    if (playerController.playState === PlayState.Stopped)
+                    {
+                        playerController.play(urlField.text)
+                    }
+                    else
+                    {
+                        playerController.resume()
+                    }
+                }
             }
         }
 
@@ -177,7 +199,11 @@ Window
             }
 
             // onClicked: openDialog.open()
-            onClicked: playerController.stop()
+            onClicked:
+            {
+                btnplay.text = "Play"
+                playerController.stop()
+            }
         }
 
         Text

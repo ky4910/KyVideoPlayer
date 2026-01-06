@@ -24,7 +24,11 @@ struct PlayContext
     PacketQueue *videoQueue;
     std::atomic<bool> running{false};
     std::atomic<bool> paused{false};
+    std::atomic<bool> stopped{false};
     double speed = 1.0;
 };
 
 #endif // PLAYCONTEXT_H
+
+
+

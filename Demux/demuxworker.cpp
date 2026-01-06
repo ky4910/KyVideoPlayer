@@ -32,34 +32,44 @@ DemuxWorker::~DemuxWorker() {}
 
 void DemuxWorker::startWork()
 {
+    qDebugT() << "DemuxWorker::startWork called.";
     // Placeholder for actual demuxing work
     if (!fmtCtx)
         return;
 
-    running = true;
-    AVPacket* pkt = av_packet_alloc();
-
-    while (running)
+    while ( m_context->running )
     {
+        AVPacket* pkt = av_packet_alloc();
+        if ( m_context->paused )
+        {
+            QThread::msleep(10);
+            continue;
+        }
+
         int ret = av_read_frame(fmtCtx, pkt);
         if (ret < 0)
+        {
+            av_packet_free(&pkt);
             break;
+        }
 
-        // TO-DO: Create a queue to hold packets if needed
-        // Otherwise, there will be many emitted signals leading to performance issues when stop playing
         if (pkt->stream_index == audioIndex)
         {
             m_context->audioQueue->push(av_packet_clone(pkt));
-            emit audioPacketReady();
+            // emit audioPacketReady();
         }
         else if (pkt->stream_index == videoIndex)
         {
             m_context->videoQueue->push(av_packet_clone(pkt));
-            emit videoPacketReady();
+            // emit videoPacketReady();
         }
-
-        av_packet_unref(pkt);
+        else
+        {
+            av_packet_free(&pkt);
+        }
     }
+
+    qDebugT() << "dexmuxing thread exiting.";
 }
 
 void DemuxWorker::stopWork()
@@ -67,8 +77,11 @@ void DemuxWorker::stopWork()
     // Placeholder for stopping demuxing work
 }
 
-bool DemuxWorker::openMedia(QString path)
+void DemuxWorker::openMedia(QString path)
 {
+    QString errorMsg;
+
+    qDebugT() << "DemuxWorker::openMedia called with path:" << path;
     // Placeholder for opening media file
     int st_index[AVMEDIA_TYPE_NB];
 
@@ -76,7 +89,8 @@ bool DemuxWorker::openMedia(QString path)
     if ( !fmtCtx )
     {
         qDebugT() << "Could not allocate AVFormatContext.";
-        return false;
+        errorMsg = "Could not allocate AVFormatContext.";
+        emit openResult(false, errorMsg);
     }
 
     char errbuf[AV_ERROR_MAX_STRING_SIZE] = {0};
@@ -84,16 +98,18 @@ bool DemuxWorker::openMedia(QString path)
     if ( avformat_open_input(&fmtCtx, trimmedPath.toStdString().c_str(), nullptr, nullptr) != 0 )
     {
         qDebugT() << "Error opening input: " << av_make_error_string(errbuf, AV_ERROR_MAX_STRING_SIZE, AVERROR(errno));
+        errorMsg = QString("Error opening input: ") + av_make_error_string(errbuf, AV_ERROR_MAX_STRING_SIZE, AVERROR(errno));;
+        emit openResult(false, errorMsg);
         avformat_free_context(fmtCtx);
-        return false;
     }
 
     if ( avformat_find_stream_info(fmtCtx, nullptr) < 0 )
     {
         qDebugT() << "Could not find stream information.";
+        errorMsg = "Could not find stream information.";
+        emit openResult(false, errorMsg);
         avformat_close_input(&fmtCtx);
         avformat_free_context(fmtCtx);
-        return false;
     }
 
     // ------------------- AUDIO Codec Param Find -------------------
@@ -104,6 +120,8 @@ bool DemuxWorker::openMedia(QString path)
     if (audioIndex < 0)
     {
         qDebugT() << "Could not find audio stream.";
+        errorMsg = "Could not find audio stream.";
+        emit openResult(false, errorMsg);
     }
     else
     {
@@ -112,12 +130,16 @@ bool DemuxWorker::openMedia(QString path)
         if (!audioCodecparCopy)
         {
             qDebugT() << "Could not allocate AVCodecParameters for audio.";
+            errorMsg = "Could not allocate AVCodecParameters for audio.";
+            emit openResult(false, errorMsg);
         }
         else
         {
             if (avcodec_parameters_copy(audioCodecparCopy, audio_stream->codecpar) < 0)
             {
                 qDebugT() << "Could not copy audio codec parameters.";
+                errorMsg = "Could not copy audio codec parameters.";
+                emit openResult(false, errorMsg);
                 avcodec_parameters_free(&audioCodecparCopy);
                 audioCodecparCopy = nullptr;
             }
@@ -135,6 +157,8 @@ bool DemuxWorker::openMedia(QString path)
     if (videoIndex < 0)
     {
         qDebugT() << "Could not find video stream.";
+        errorMsg = "Could not find video stream.";
+        emit openResult(false, errorMsg);
     }
     else
     {
@@ -143,12 +167,16 @@ bool DemuxWorker::openMedia(QString path)
         if (!videoCodecparCopy)
         {
             qDebugT() << "Could not allocate AVCodecParameters for video.";
+            errorMsg = "Could not allocate AVCodecParameters for video.";
+            emit openResult(false, errorMsg);
         }
         else
         {
             if (avcodec_parameters_copy(videoCodecparCopy, video_stream->codecpar) < 0)
             {
                 qDebugT() << "Could not copy video codec parameters.";
+                errorMsg = "Could not copy video codec parameters.";
+                emit openResult(false, errorMsg);
                 avcodec_parameters_free(&videoCodecparCopy);
                 videoCodecparCopy = nullptr;
             }
@@ -164,23 +192,23 @@ bool DemuxWorker::openMedia(QString path)
     if (audioIndex < 0 && videoIndex < 0)
     {
         qDebugT() << "No audio or video streams found.";
+        errorMsg = "No audio or video streams found.";
+        emit openResult(false, errorMsg);
         avformat_close_input(&fmtCtx);
         avformat_free_context(fmtCtx);
-        return false;
     }
 
     double duration = fmtCtx->duration / (double)AV_TIME_BASE;
     qDebugT() << "Media duration: " << duration << " seconds.";
 
     emit durationReady(duration);
-
-    return true;
+    errorMsg = "Open Success";
+    emit openResult(true, errorMsg);
 }
 
 void DemuxWorker::stopDemux()
 {
     qDebugT() << "DemuxWorker::stopDemux called.";
-    running = false;
 
     m_context->audioQueue->setRunning(false);
     m_context->videoQueue->setRunning(false);
@@ -191,6 +219,19 @@ void DemuxWorker::stopDemux()
         avformat_free_context(fmtCtx);
         fmtCtx = nullptr;
     }
+}
+
+void DemuxWorker::pauseDemux()
+{
+    qDebugT() << "DemuxWorker::pauseDemux called.";
+    // Implement pause functionality if needed
+}
+
+void DemuxWorker::resumeDemux()
+{
+    qDebugT() << "DemuxWorker::resumeDemux called.";
+    // Implement resume functionality if needed
+    m_context->paused = false;
 }
 
 PlayContext* DemuxWorker::getContext()

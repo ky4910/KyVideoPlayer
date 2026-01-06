@@ -17,18 +17,17 @@ public:
     DemuxWorker();
     virtual ~DemuxWorker();
 
-    void startWork();
     void stopWork();
-
-    bool openMedia(QString path);
 
     PlayContext* getContext();
     void setContext(PlayContext* context);
 
 signals:
 
-    void audioPacketReady();
-    void videoPacketReady();
+    void openResult(bool success, const QString& errorMsg);
+
+    // void audioPacketReady();
+    // void videoPacketReady();
 
     void audioCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
     void videoCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
@@ -36,7 +35,11 @@ signals:
     void durationReady(double duration);
 
 public slots:
+    void startWork();
     void stopDemux();
+    void pauseDemux();
+    void resumeDemux();
+    void openMedia(QString path);
 
 private:
     int audioIndex;

@@ -19,40 +19,15 @@ AudioDecoder::AudioDecoder()
 
     m_context = nullptr;
 
-    timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &AudioDecoder::onPosChanged);
+    qDebugT() << "AudioDecoder constructed.";
 }
 
 AudioDecoder::~AudioDecoder() {}
-
-void AudioDecoder::onPosChanged()
-{
-    double position = m_context->clock.get();
-    emit positionChanged(position);
-}
-
-void AudioDecoder::pushPacket()
-{
-    qDebugT() << "push packet from Audio Decoder";
-
-    {
-        QMutexLocker locker(&mutex);
-        audioPacQueue.push(m_context->audioQueue->pop());
-    }
-
-    // trigger processing
-    if ( !processing )
-    {
-        processing = true;
-        QMetaObject::invokeMethod(this, "processQueuedPackets", Qt::AutoConnection);
-    }
-}
 
 void AudioDecoder::onAudioCodecParReady(AVCodecParameters *codecpar, AVRational timeBase)
 {
     qDebugT() << "AudioDecoder received codec parameters.";
     // Here you can initialize your decoder with the codecpar
-    timer->start(30);
 
     m_timeBase = timeBase;
 
@@ -109,14 +84,68 @@ void AudioDecoder::onAudioCodecParReady(AVCodecParameters *codecpar, AVRational 
     SDL_PauseAudioDevice(audioDeviceId, 0);
 }
 
+void AudioDecoder::doDecode()
+{
+    qDebugT() << "AudioDecoder::doDecode called.";
+
+    // while ( true )
+    while ( m_context->running)
+    {
+        if ( m_context->paused )
+        {
+            QThread::msleep(10);
+            continue;
+        }
+
+        if ( !m_context->running )
+        {
+            processing = false;
+            break;
+        }
+
+        AVPacket* pkt = nullptr;
+        {
+            QMutexLocker locker(&mutex);
+            if ( m_context->audioQueue->empty() )
+            {
+                break;
+            }
+            pkt = m_context->audioQueue->pop();
+        }
+
+        // Decode packet
+        if (avcodec_send_packet(mCodecCtx, pkt) == 0) {
+            AVFrame* frame = av_frame_alloc();
+
+            while (avcodec_receive_frame(mCodecCtx, frame) == 0)
+            {
+                // Resample + SDL playback
+                processPCM(frame);
+            }
+
+            av_frame_free(&frame);
+        }
+
+        av_packet_free(&pkt);
+    }
+}
+
 void AudioDecoder::processQueuedPackets()
 {
     // qDebugT() << "AudioDecoder::processQueuedPackets called.";
 
-    while (true)
+    // while ( m_context->running)
+    while ( true )
     {
-        if (m_stopping)
+        if ( m_context->paused )
         {
+            QThread::msleep(10);
+            continue;
+        }
+
+        if ( !m_context->running )
+        {
+            processing = false;
             break;
         }
 
@@ -146,6 +175,17 @@ void AudioDecoder::processQueuedPackets()
 
         av_packet_free(&pkt);
     }
+
+    if ( m_context->stopped )
+    {
+        m_context->audioQueue->clear();
+        SDL_PauseAudioDevice(audioDeviceId, 1);
+        SDL_ClearQueuedAudio(audioDeviceId);
+        SDL_CloseAudioDevice(audioDeviceId);
+        audioDeviceId = 0;
+    }
+
+    // qDebugT() << "AudioDecoder::processQueuedPackets finished.";
 
     processing = false;
 }
@@ -189,8 +229,18 @@ void AudioDecoder::stopDecode()
         avcodec_free_context(&mCodecCtx);
         mCodecCtx = nullptr;
     }
+}
 
-    timer->stop();
+void AudioDecoder::onPauseAudio()
+{
+    qDebugT() << "AudioDecoder::onPauseAudio called.";
+    SDL_PauseAudioDevice(audioDeviceId, 1);
+}
+
+void AudioDecoder::onResumeAudio()
+{
+    qDebugT() << "AudioDecoder::onResumeAudio called.";
+    SDL_PauseAudioDevice(audioDeviceId, 0);
 }
 
 void AudioDecoder::processPCM(AVFrame* frame)

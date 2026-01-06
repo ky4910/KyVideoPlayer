@@ -39,6 +39,8 @@ qt_add_executable(appKyVideoPlayer
     Render/videooutputfbo.cpp
     Render/videooutputrenderer.cpp
     PlaybackContext/playcontext.cpp
+    PlaybackContext/playstate.cpp
+    PlaybackContext/playstateqml.cpp
     Tools/packetqueue.cpp
 )
 

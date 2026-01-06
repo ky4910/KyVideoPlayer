@@ -31,10 +31,12 @@ signals:
     void frameDecoded(AVFrame* frame);
 
 public slots:
-    void pushPacket();
     void onVideoCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
+    void doDecode();
     void processQueuedPackets();
     void stopDecode();
+    void onPauseVideo();
+    void onResumeVideo();
 
     PlayContext* getContext();
     void setContext(PlayContext* context);

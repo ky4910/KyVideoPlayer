@@ -31,18 +31,15 @@ private:
     void processPCM(AVFrame* frame);
 
 public slots:
-    void pushPacket();
     void onAudioCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
+    void doDecode();
     void processQueuedPackets();
     void stopDecode();
+    void onPauseAudio();
+    void onResumeAudio();
 
     PlayContext* getContext();
     void setContext(PlayContext* context);
-
-    void onPosChanged();
-
-signals:
-    void positionChanged(double position);
 
 private:
     QMutex mutex;
@@ -58,8 +55,6 @@ private:
 
     PlayContext* m_context;
     AVRational m_timeBase;
-
-    QTimer* timer;
 };
 
 #endif // AUDIODECODER_H

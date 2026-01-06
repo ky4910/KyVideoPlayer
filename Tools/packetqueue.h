@@ -12,7 +12,7 @@ extern "C"
     #include <libavcodec/avcodec.h>
 }
 
-#define MAX_QUEUE_SIZE 5
+#define MAX_QUEUE_SIZE 25
 
 class PacketQueue
 {
@@ -20,6 +20,9 @@ public:
     PacketQueue();
     void push(AVPacket* pkt);
     AVPacket* pop();
+    void abort();
+    void clear();
+    bool empty();
 
     void setRunning(bool running);
     bool getRunning();
@@ -27,9 +30,11 @@ public:
 private:
     std::queue<AVPacket*> m_queue;
     QMutex m_mutex;
+    // QWaitCondition m_cond;
     QWaitCondition m_notEmpty;
     QWaitCondition m_notFull;
     bool m_running;
+    bool m_aborted;
 };
 
 

@@ -1,20 +1,33 @@
 #include "packetqueue.h"
+#include "utils.h"
 
 PacketQueue::PacketQueue()
 {
     m_running = true;
+    m_aborted = false;
 }
 
 void PacketQueue::push(AVPacket* pkt)
 {
     QMutexLocker locker(&m_mutex);
+    if (!pkt)
+        return;
 
-    while (m_queue.size() >= MAX_QUEUE_SIZE && m_running)
+    // if (m_aborted)
+    // {
+    //     av_packet_free(&pkt);
+    //     return;
+    // }
+
+    // m_queue.push(pkt);
+    // m_cond.wakeOne();
+
+    while (!m_aborted && m_queue.size() >= MAX_QUEUE_SIZE)
     {
-        m_notFull.wait( &m_mutex );
+        m_notFull.wait(&m_mutex);
     }
 
-    if (!m_running)
+    if (m_aborted)
     {
         av_packet_free(&pkt);
         return;
@@ -28,19 +41,48 @@ AVPacket* PacketQueue::pop()
 {
     QMutexLocker locker(&m_mutex);
 
-    while (m_queue.empty())
+    while (m_queue.empty() && !m_aborted)
     {
+        qDebugT() << "PacketQueue empty, waiting to pop...";
         m_notEmpty.wait(&m_mutex);
+        qDebugT() << "Woke up from wait to pop.";
     }
 
-    if (!m_running)
+    if (m_aborted)
         return nullptr;
 
     AVPacket* pkt = m_queue.front();
     m_queue.pop();
-    m_notFull.wakeOne();
 
+    m_notFull.wakeOne();
     return pkt;
+}
+
+void PacketQueue::abort()
+{
+    QMutexLocker locker(&m_mutex);
+    m_aborted = true;
+
+    m_notEmpty.wakeAll();
+    m_notFull.wakeAll();
+}
+
+void PacketQueue::clear()
+{
+    QMutexLocker locker(&m_mutex);
+
+    while (!m_queue.empty())
+    {
+        AVPacket* pkt = m_queue.front();
+        m_queue.pop();
+        av_packet_free(&pkt);
+    }
+}
+
+bool PacketQueue::empty()
+{
+    QMutexLocker locker(&m_mutex);
+    return m_queue.empty();
 }
 
 void PacketQueue::setRunning(bool running)

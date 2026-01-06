@@ -7,6 +7,7 @@ VideoOutputFBO::VideoOutputFBO(QQuickItem *parent)
 {
     qDebugT() << "VideoOutputFBO::VideoOutputFBO called.";
     setFlag(ItemHasContents, true);
+    m_state = PlayState::Idle;
 }
 
 QQuickFramebufferObject::Renderer *VideoOutputFBO::createRenderer() const
@@ -17,6 +18,18 @@ QQuickFramebufferObject::Renderer *VideoOutputFBO::createRenderer() const
 
 void VideoOutputFBO::processYUV(AVFrame *frame)
 {
+    // if ( m_state == PlayState::Stopped )
+    // {
+    //     av_frame_free(&frame);
+    //     return;
+    // }
+
+    if ( m_state != PlayState::Playing )
+    {
+        // av_frame_free(&frame);
+        return;
+    }
+
     QMutexLocker locker(&m_mutex);
 
     if (!m_frame)
@@ -29,8 +42,41 @@ void VideoOutputFBO::processYUV(AVFrame *frame)
 
     av_frame_free(&frame);
 
-    update();
+    if ( m_state != PlayState::Stopped )
+    {
+        update();
+    }
 
     // qDebugT() << "VideoOutputFBO::processYUV called.";
 }
 
+void VideoOutputFBO::setPlayState(PlayState state)
+{
+    QMutexLocker locker(&m_mutex);
+    m_state = state;
+
+    if (state == PlayState::Stopped)
+    {
+        if (m_frame)
+        {
+            av_frame_free(&m_frame);
+            m_frame = nullptr;
+        }
+        update();
+    }
+}
+
+void VideoOutputFBO::clearScreen()
+{
+    QMutexLocker locker(&m_mutex);
+
+    if (m_frame)
+    {
+        av_frame_free(&m_frame);
+        m_frame = nullptr;
+    }
+
+    update();
+
+    qDebugT() << "VideoOutputFBO::clearScreen called.";
+}

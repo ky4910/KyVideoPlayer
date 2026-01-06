@@ -7,6 +7,7 @@
 // #include "minedecoder.h"
 #include "playercontroller.h"
 #include "videooutputfbo.h"
+#include "playstateqml.h"
 
 extern "C"
 {
@@ -38,6 +39,7 @@ int main(int argc, char *argv[])
     // thread->start();
 
     qmlRegisterType<VideoOutputFBO>("CustomFBO", 1, 0, "VideoOutputFBO");
+    qmlRegisterUncreatableType<PlayStateQml>( "PlayerCtl", 1, 0, "PlayState", "Enum only" );
 
     qDebugT() << "avformat version: " << LIBAVFORMAT_IDENT;
     qDebugT() << "avcodec version: " << LIBAVCODEC_IDENT;

@@ -21,23 +21,6 @@ VideoDecoder::VideoDecoder(QObject *parent)
 
 VideoDecoder::~VideoDecoder() {}
 
-void VideoDecoder::pushPacket()
-{
-    qDebugT () << "push packet from Video Decoder";
-
-    {
-        QMutexLocker locker(&mutex);
-        videoPacQueue.push(m_context->videoQueue->pop());
-    }
-
-    // trigger processing
-    if ( !processing )
-    {
-        processing = true;
-        QMetaObject::invokeMethod(this, "processQueuedPackets", Qt::AutoConnection);
-    }
-}
-
 void VideoDecoder::onVideoCodecParReady(AVCodecParameters *codecpar, AVRational timeBase)
 {
     qDebugT() << "VideoDecoder received codec parameters.";
@@ -51,16 +34,94 @@ void VideoDecoder::onVideoCodecParReady(AVCodecParameters *codecpar, AVRational 
     avcodec_open2(mCodecCtx, mCodec, nullptr);
 }
 
+void VideoDecoder::doDecode()
+{
+    qDebugT() << "VideoDecoder::doDecode called.";
+
+    while (m_context->running)
+    {
+        if ( m_context->paused )
+        {
+            QThread::msleep(10);
+            continue;
+        }
+
+        if ( !m_context->running )
+        {
+            processing = false;
+            break;
+        }
+
+        AVPacket* pkt = nullptr;
+        {
+            QMutexLocker locker(&mutex);
+            if ( m_context->videoQueue->empty() )
+            {
+                break;
+            }
+            pkt = m_context->videoQueue->pop();
+        }
+
+        // Decode packet
+        if (avcodec_send_packet(mCodecCtx, pkt) == 0) {
+            AVFrame* frame = av_frame_alloc();
+
+            while (avcodec_receive_frame(mCodecCtx, frame) == 0)
+            {
+                // Send video data to OpenGL or QQuickFramebufferObject
+                AVFrame *out = av_frame_alloc();
+                av_frame_ref(out, frame);
+
+                int64_t pts = (frame->pts != AV_NOPTS_VALUE)
+                                ? frame->pts
+                                : frame->best_effort_timestamp;
+
+                double videoPts = pts * av_q2d(m_timeBase);
+                double audioPts = m_context->clock.get();
+                double diff = videoPts - audioPts;
+                // qDebugT() << "Video PTS: " << videoPts << ", Audio PTS: " << audioPts;
+                // QThread::msleep(30);
+                syncAndSend(out, diff);
+                // emit frameDecoded(out);
+            }
+
+            av_frame_free(&frame);
+        }
+
+        av_packet_free(&pkt);
+    }
+
+    if ( m_context->stopped )
+    {
+        m_context->videoQueue->clear();
+    }
+
+    processing = false;
+}
+
 void VideoDecoder::processQueuedPackets()
 {
     // qDebugT() << "VideoDecoder::processQueuedPackets called.";
 
-    while (true)
+    // while ( true )
+    while (m_context->running)
     {
-        if ( m_stopping )
+        if ( m_context->paused )
         {
+            QThread::msleep(10);
+            continue;
+        }
+
+        if ( !m_context->running )
+        {
+            processing = false;
             break;
         }
+
+        // if ( m_stopping )
+        // {
+        //     break;
+        // }
 
         AVPacket* pkt = nullptr;
         {
@@ -102,7 +163,14 @@ void VideoDecoder::processQueuedPackets()
         av_packet_free(&pkt);
     }
 
+    if ( m_context->stopped )
+    {
+        m_context->videoQueue->clear();
+    }
+
     processing = false;
+
+    // qDebugT() << "VideoDecoder::processQueuedPackets finished.";
 }
 
 void VideoDecoder::stopDecode()
@@ -137,7 +205,22 @@ void VideoDecoder::stopDecode()
         mCodecCtx = nullptr;
     }
 
+    // AVFrame *nullFrame = nullptr;
+    // emit frameDecoded(nullFrame);
+
     qDebugT() << "VideoDecoder resources freed.";
+}
+
+void VideoDecoder::onPauseVideo()
+{
+    qDebugT() << "VideoDecoder::onPauseVideo called.";
+    // Handle pause if needed
+}
+
+void VideoDecoder::onResumeVideo()
+{
+    qDebugT() << "VideoDecoder::onResumeVideo called.";
+    // Handle resume if needed
 }
 
 void VideoDecoder::syncAndSend(AVFrame* frame, double diff)

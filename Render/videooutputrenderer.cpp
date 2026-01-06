@@ -14,7 +14,7 @@ void VideoOutputRenderer::initGL()
 {
     mShaderProgram = new QOpenGLShaderProgram();
 
-    qDebug() << "file PATH: " << QFile("D:/Code/QtRelated/KyVideoPlayer/yuv.vert").exists();
+    qDebugT() << "file PATH: " << QFile("D:/Code/QtRelated/KyVideoPlayer/yuv.vert").exists();
 
     mShaderProgram->addShaderFromSourceFile(
         QOpenGLShader::Vertex, "D:/Code/QtRelated/KyVideoPlayer/yuv.vert");
@@ -37,17 +37,19 @@ void VideoOutputRenderer::render()
 {
     // qDebugT() << "VideoOutputRenderer::render called.";
 
-    if ( !currentFrame || currentFrame->width == 0)
-    {
-        qDebugT() << "No frame to render.";
-        return;
-    }
-
     if ( !mInitialized )
     {
         initializeOpenGLFunctions();
         initGL();
         mInitialized = true;
+    }
+
+    if ( !currentFrame || currentFrame->width == 0)
+    {
+        glClearColor(0, 0, 0, 1);
+        glClear(GL_COLOR_BUFFER_BIT);
+        qDebugT() << "No frame to render.";
+        return;
     }
 
     const int w = currentFrame->width;
@@ -133,6 +135,10 @@ void VideoOutputRenderer::synchronize(QQuickFramebufferObject* item)
             currentFrame = av_frame_alloc();
 
         av_frame_ref(currentFrame, fboItem->m_frame);
+    }
+    else
+    {
+        currentFrame = nullptr;
     }
 }
 
