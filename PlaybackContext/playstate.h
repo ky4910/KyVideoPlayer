@@ -8,7 +8,8 @@ enum class PlayState {
     Playing,
     Paused,
     Stopping,
-    Stopped
+    Stopped,
+    Finished
 };
 
 #endif // PLAYSTATE_H

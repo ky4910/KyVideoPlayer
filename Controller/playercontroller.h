@@ -35,6 +35,8 @@ public:
     double position() const { return m_position; }
     PlayState playState() const { return m_state; }
 
+    void playFinished();
+
 signals:
     void openFile(const QString &path);
     void startDemux();
@@ -53,6 +55,8 @@ public slots:
     void onDurationChanged(double duration);
     void onPositionChanged(double position);
     void onUpdateProgress();
+    void onAudioFinished();
+    void onVideoFinished();
 
 private:
     QThread *dmxThread;
@@ -66,6 +70,9 @@ private:
 
     double m_duration;
     double m_position;
+
+    bool audioDone;
+    bool videoDone;
 
     std::unique_ptr<PlayContext> m_ctx;
 

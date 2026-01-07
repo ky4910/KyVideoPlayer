@@ -69,6 +69,10 @@ void DemuxWorker::startWork()
         }
     }
 
+    // Push null packets to signal end of stream
+    m_context->audioQueue->push(nullptr);
+    m_context->videoQueue->push(nullptr);
+
     qDebugT() << "dexmuxing thread exiting.";
 }
 

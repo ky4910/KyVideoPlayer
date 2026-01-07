@@ -12,6 +12,9 @@ PlayerController::PlayerController()
     m_duration = 0.0;
     m_position = 0.0;
 
+    audioDone = false;
+    videoDone = false;
+
     m_timer = new QTimer(this);
 
     dmxThread = new QThread;
@@ -56,6 +59,9 @@ PlayerController::PlayerController()
     connect(dmxWorker, &DemuxWorker::durationReady, this, &PlayerController::onDurationChanged);
     // connect(audioDecoder, &AudioDecoder::positionChanged, this, &PlayerController::onPositionChanged);
     connect(m_timer, &QTimer::timeout, this, &PlayerController::onUpdateProgress);
+
+    connect(audioDecoder, &AudioDecoder::decodeFinshed, this, &PlayerController::onAudioFinished);
+    connect(videoDecoder, &VideoDecoder::decodeFinshed, this, &PlayerController::onVideoFinished);
 }
 
 PlayerController::~PlayerController() {}
@@ -221,4 +227,38 @@ void PlayerController::onPositionChanged(double position)
 
     m_position = position;
     emit positionChanged();
+}
+
+void PlayerController::onAudioFinished()
+{
+    qDebugT() << "AudioDecoder signaled decode finished.";
+    audioDone = true;
+    if ( videoDone )
+    {
+        qDebugT() << "AUDIO: Both audio and video finished.";
+        playFinished();
+    }
+}
+
+void PlayerController::onVideoFinished()
+{
+    qDebugT() << "VideoDecoder signaled decode finished.";
+    videoDone = true;
+    if ( audioDone )
+    {
+        qDebugT() << "VIDEO: Both audio and video finished.";
+        playFinished();
+    }
+}
+
+void PlayerController::playFinished()
+{
+    stop();
+
+    qDebugT() << "Playback finished.";
+
+    videoOutputFBO->clearScreen();
+
+    m_state = PlayState::Finished;
+    emit playStateChanged();
 }

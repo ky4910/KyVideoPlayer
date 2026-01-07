@@ -29,11 +29,11 @@ public:
 
 signals:
     void frameDecoded(AVFrame* frame);
+    void decodeFinshed();
 
 public slots:
     void onVideoCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
     void doDecode();
-    void processQueuedPackets();
     void stopDecode();
     void onPauseVideo();
     void onResumeVideo();
@@ -47,8 +47,6 @@ private:
     AVCodecContext  *mCodecCtx;
     SwrContext      *mSwrCtx;
 
-    bool m_stopping;
-    bool processing;
     std::queue<AVPacket*> videoPacQueue;
 
     PlayContext* m_context;

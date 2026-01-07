@@ -14,9 +14,6 @@ AudioDecoder::AudioDecoder()
     wantSpec = {0};
     haveSpec = {0};
 
-    m_stopping = false;
-    processing = false;
-
     m_context = nullptr;
 
     qDebugT() << "AudioDecoder constructed.";
@@ -98,10 +95,7 @@ void AudioDecoder::doDecode()
         }
 
         if ( !m_context->running )
-        {
-            processing = false;
             break;
-        }
 
         AVPacket* pkt = nullptr;
         {
@@ -111,53 +105,13 @@ void AudioDecoder::doDecode()
                 break;
             }
             pkt = m_context->audioQueue->pop();
-        }
-
-        // Decode packet
-        if (avcodec_send_packet(mCodecCtx, pkt) == 0) {
-            AVFrame* frame = av_frame_alloc();
-
-            while (avcodec_receive_frame(mCodecCtx, frame) == 0)
+            if (!pkt)
             {
-                // Resample + SDL playback
-                processPCM(frame);
-            }
-
-            av_frame_free(&frame);
-        }
-
-        av_packet_free(&pkt);
-    }
-}
-
-void AudioDecoder::processQueuedPackets()
-{
-    // qDebugT() << "AudioDecoder::processQueuedPackets called.";
-
-    // while ( m_context->running)
-    while ( true )
-    {
-        if ( m_context->paused )
-        {
-            QThread::msleep(10);
-            continue;
-        }
-
-        if ( !m_context->running )
-        {
-            processing = false;
-            break;
-        }
-
-        AVPacket* pkt = nullptr;
-        {
-            QMutexLocker locker(&mutex);
-            if (audioPacQueue.empty())
-            {
+                // End of stream signal
+                qDebugT() << "AudioDecoder received end of stream signal.";
+                emit decodeFinshed();
                 break;
             }
-            pkt = audioPacQueue.front();
-            audioPacQueue.pop();
         }
 
         // Decode packet
@@ -175,26 +129,11 @@ void AudioDecoder::processQueuedPackets()
 
         av_packet_free(&pkt);
     }
-
-    if ( m_context->stopped )
-    {
-        m_context->audioQueue->clear();
-        SDL_PauseAudioDevice(audioDeviceId, 1);
-        SDL_ClearQueuedAudio(audioDeviceId);
-        SDL_CloseAudioDevice(audioDeviceId);
-        audioDeviceId = 0;
-    }
-
-    // qDebugT() << "AudioDecoder::processQueuedPackets finished.";
-
-    processing = false;
 }
 
 void AudioDecoder::stopDecode()
 {
     qDebugT() << "AudioDecoder::stopDecode called.";
-
-    m_stopping = true;
 
     // Clear queued packets
     {

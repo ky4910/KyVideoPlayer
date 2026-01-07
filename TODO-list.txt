@@ -1,4 +1,4 @@
-✔	1. Pause / Resume / Stop / Play function complementation
+1. Pause / Resume / Stop / Play function complementation
 2. Play finished logic optimization
 3. Seek function support
 4. Fast Forward/Backward

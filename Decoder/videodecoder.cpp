@@ -13,9 +13,6 @@ VideoDecoder::VideoDecoder(QObject *parent)
     mCodecCtx = nullptr;
     mSwrCtx = nullptr;
 
-    m_stopping = false;
-    processing = false;
-
     m_context = nullptr;
 }
 
@@ -29,6 +26,7 @@ void VideoDecoder::onVideoCodecParReady(AVCodecParameters *codecpar, AVRational 
     m_timeBase = timeBase;
 
     mCodec = avcodec_find_decoder(codecpar->codec_id);
+    qDebugT() << "Codec ID: " << codecpar->codec_id << " VideoDecoder found codec: " << mCodec->name;
     mCodecCtx = avcodec_alloc_context3(mCodec);
     avcodec_parameters_to_context(mCodecCtx, codecpar);
     avcodec_open2(mCodecCtx, mCodec, nullptr);
@@ -47,10 +45,7 @@ void VideoDecoder::doDecode()
         }
 
         if ( !m_context->running )
-        {
-            processing = false;
             break;
-        }
 
         AVPacket* pkt = nullptr;
         {
@@ -60,78 +55,13 @@ void VideoDecoder::doDecode()
                 break;
             }
             pkt = m_context->videoQueue->pop();
-        }
-
-        // Decode packet
-        if (avcodec_send_packet(mCodecCtx, pkt) == 0) {
-            AVFrame* frame = av_frame_alloc();
-
-            while (avcodec_receive_frame(mCodecCtx, frame) == 0)
+            if (!pkt)
             {
-                // Send video data to OpenGL or QQuickFramebufferObject
-                AVFrame *out = av_frame_alloc();
-                av_frame_ref(out, frame);
-
-                int64_t pts = (frame->pts != AV_NOPTS_VALUE)
-                                ? frame->pts
-                                : frame->best_effort_timestamp;
-
-                double videoPts = pts * av_q2d(m_timeBase);
-                double audioPts = m_context->clock.get();
-                double diff = videoPts - audioPts;
-                // qDebugT() << "Video PTS: " << videoPts << ", Audio PTS: " << audioPts;
-                // QThread::msleep(30);
-                syncAndSend(out, diff);
-                // emit frameDecoded(out);
-            }
-
-            av_frame_free(&frame);
-        }
-
-        av_packet_free(&pkt);
-    }
-
-    if ( m_context->stopped )
-    {
-        m_context->videoQueue->clear();
-    }
-
-    processing = false;
-}
-
-void VideoDecoder::processQueuedPackets()
-{
-    // qDebugT() << "VideoDecoder::processQueuedPackets called.";
-
-    // while ( true )
-    while (m_context->running)
-    {
-        if ( m_context->paused )
-        {
-            QThread::msleep(10);
-            continue;
-        }
-
-        if ( !m_context->running )
-        {
-            processing = false;
-            break;
-        }
-
-        // if ( m_stopping )
-        // {
-        //     break;
-        // }
-
-        AVPacket* pkt = nullptr;
-        {
-            QMutexLocker locker(&mutex);
-            if (videoPacQueue.empty())
-            {
+                qDebugT() << "VideoDecoder received end of stream signal.";
+                // End of stream signal
+                emit decodeFinshed();
                 break;
             }
-            pkt = videoPacQueue.front();
-            videoPacQueue.pop();
         }
 
         // Decode packet
@@ -167,18 +97,12 @@ void VideoDecoder::processQueuedPackets()
     {
         m_context->videoQueue->clear();
     }
-
-    processing = false;
-
-    // qDebugT() << "VideoDecoder::processQueuedPackets finished.";
 }
 
 void VideoDecoder::stopDecode()
 {
     //
     qDebugT() << "VideoDecoder::stopDecode called.";
-
-    m_stopping = true;
 
     // Clear queued packets
     {

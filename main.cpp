@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     // TO-DO: Should use relative path
-    const QUrl url(QStringLiteral("file:///D:/Code/QtRelated/KyVideoPlayer/Main.qml"));
+    const QUrl url(QStringLiteral("file:///D:/kProject/QtProjectDir/KyVideoPlayer/Main.qml"));
 
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
 

@@ -33,13 +33,15 @@ private:
 public slots:
     void onAudioCodecParReady(AVCodecParameters *codecpar, AVRational timeBase);
     void doDecode();
-    void processQueuedPackets();
     void stopDecode();
     void onPauseAudio();
     void onResumeAudio();
 
     PlayContext* getContext();
     void setContext(PlayContext* context);
+
+signals:
+    void decodeFinshed();
 
 private:
     QMutex mutex;
@@ -49,8 +51,6 @@ private:
     SDL_AudioSpec   wantSpec, haveSpec;
     SDL_AudioDeviceID audioDeviceId;
 
-    bool m_stopping;
-    bool processing;
     std::queue<AVPacket*> audioPacQueue;
 
     PlayContext* m_context;

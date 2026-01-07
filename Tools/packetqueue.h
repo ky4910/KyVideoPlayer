@@ -30,7 +30,6 @@ public:
 private:
     std::queue<AVPacket*> m_queue;
     QMutex m_mutex;
-    // QWaitCondition m_cond;
     QWaitCondition m_notEmpty;
     QWaitCondition m_notFull;
     bool m_running;

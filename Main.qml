@@ -121,7 +121,7 @@ Window
         Button
         {
             id: btnplay
-            text: "Play"
+            text: ( playerController.playState === PlayState.Playing ) ? qsTr("Pause") : qsTr("Play")
             width: 120
             height: 40
 
@@ -146,28 +146,20 @@ Window
 
             onClicked:
             {
-                btnplay.text = ( btnplay.text === qsTr("Play") ) ? qsTr("Pause") : qsTr("Play")
-                if ( btnplay.text === qsTr("Play") )
+                if (playerController.playState === PlayState.Playing)
                 {
-                    if (playerController.playState === PlayState.Playing)
-                    {
-                        playerController.pause()
-                    }
-                    else
-                    {
-                        playerController.play(urlField.text)
-                    }
+                    btnplay.text = "Play"
+                    playerController.pause()
+                }
+                else if (playerController.playState === PlayState.Paused)
+                {
+                    btnplay.text = "Pause"
+                    playerController.resume()
                 }
                 else
                 {
-                    if (playerController.playState === PlayState.Stopped)
-                    {
-                        playerController.play(urlField.text)
-                    }
-                    else
-                    {
-                        playerController.resume()
-                    }
+                    btnplay.text = "Pause"
+                    playerController.play(urlField.text)
                 }
             }
         }
@@ -178,6 +170,7 @@ Window
             text: "Stop"
             width: 120
             height: 40
+            enabled: playerController.playState !== PlayState.Stopped
 
             background: Rectangle {
                 radius: 6

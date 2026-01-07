@@ -10,17 +10,6 @@ PacketQueue::PacketQueue()
 void PacketQueue::push(AVPacket* pkt)
 {
     QMutexLocker locker(&m_mutex);
-    if (!pkt)
-        return;
-
-    // if (m_aborted)
-    // {
-    //     av_packet_free(&pkt);
-    //     return;
-    // }
-
-    // m_queue.push(pkt);
-    // m_cond.wakeOne();
 
     while (!m_aborted && m_queue.size() >= MAX_QUEUE_SIZE)
     {
@@ -43,9 +32,7 @@ AVPacket* PacketQueue::pop()
 
     while (m_queue.empty() && !m_aborted)
     {
-        qDebugT() << "PacketQueue empty, waiting to pop...";
         m_notEmpty.wait(&m_mutex);
-        qDebugT() << "Woke up from wait to pop.";
     }
 
     if (m_aborted)
@@ -94,3 +81,4 @@ bool PacketQueue::getRunning()
 {
     return m_running;
 }
+
