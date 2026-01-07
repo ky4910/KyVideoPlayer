@@ -1,9 +1,12 @@
-1. Pause / Resume / Stop / Play function complementation
-2. Play finished logic optimization
+✅	1. Pause / Resume / Stop / Play function complementation
+✅	2. Play finished logic optimization
 3. Seek function support
 4. Fast Forward/Backward
 5. Full screen / Capture snapshot / HW decode
 6. Pos calculation for no sound video
 7. AV Sync logic for no sound video
-8. Adjuct the Slider position
+8. Adjust the Slider position
 9. Captions support ( maybe using ASR get captions )
+✅	10. Source files path correction, 3rdparty lib integration
+11. Use av_log to debug prgram
+12. Handler play when url is null

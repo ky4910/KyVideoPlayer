@@ -14,13 +14,11 @@ void VideoOutputRenderer::initGL()
 {
     mShaderProgram = new QOpenGLShaderProgram();
 
-    qDebugT() << "file PATH: " << QFile("D:/kProject/QtProjectDir/KyVideoPlayer/yuv.vert").exists();
+    mShaderProgram->addShaderFromSourceFile(
+        QOpenGLShader::Vertex, ":/resources/yuv.vert");
 
     mShaderProgram->addShaderFromSourceFile(
-        QOpenGLShader::Vertex, "D:/kProject/QtProjectDir/KyVideoPlayer/yuv.vert");
-
-    mShaderProgram->addShaderFromSourceFile(
-        QOpenGLShader::Fragment, "D:/kProject/QtProjectDir/KyVideoPlayer/yuv.frag");
+        QOpenGLShader::Fragment, ":/resources/yuv.frag");
 
     if (!mShaderProgram->link()) {
         qWarning() << "Shader link failed:" << mShaderProgram->log();

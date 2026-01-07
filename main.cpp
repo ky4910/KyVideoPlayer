@@ -8,6 +8,7 @@
 #include "playercontroller.h"
 #include "videooutputfbo.h"
 #include "playstateqml.h"
+#include <QFile>
 
 extern "C"
 {
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     // TO-DO: Should use relative path
-    const QUrl url(QStringLiteral("file:///D:/kProject/QtProjectDir/KyVideoPlayer/Main.qml"));
+    const QUrl url(QStringLiteral("qrc:/resources/Main.qml"));
 
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
 
@@ -60,6 +61,8 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("playerController", playerController);
 
     engine.load(url);
+
+    qDebugT() << "file PATH: " << QFile("D:/kProject/QtProjectDir/KyVideoPlayer/yuv.vert").exists();
 
     return app.exec();
 }

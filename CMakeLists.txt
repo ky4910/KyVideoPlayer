@@ -11,10 +11,11 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Qml)
 
 
-set(FFMPEG_ROOT "D:/kProject/RelatedLib/ffmpeg60")
-set(SDL2_ROOT "D:/kProject/RelatedLib/SDL2-2.30.10/x86_64-w64-mingw32")
+set(FFMPEG_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/ffmpeg60)
+set(SDL2_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/SDL2-2.30.10/x86_64-w64-mingw32)
 
 include_directories(
     ${FFMPEG_ROOT}/include
@@ -30,6 +31,7 @@ add_definitions(-D__INTRIN_H_INCLUDED)
 
 qt_policy(SET QTP0001 NEW)
 
+qt_add_resources(RESOURCES qml.qrc shaders.qrc)
 qt_add_executable(appKyVideoPlayer
     main.cpp
     Controller/playercontroller.cpp
@@ -42,6 +44,7 @@ qt_add_executable(appKyVideoPlayer
     PlaybackContext/playstate.cpp
     PlaybackContext/playstateqml.cpp
     Tools/packetqueue.cpp
+    ${RESOURCES}
 )
 
 include_directories(
@@ -53,14 +56,7 @@ include_directories(
     Tools
 )
 
-qt_add_qml_module(appKyVideoPlayer
-    URI KyVideoPlayer
-    VERSION 1.0
-    QML_FILES
-        Main.qml
-        RESOURCES
-)
-qt6_add_resources(RESOURCES shaders.qrc)
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
